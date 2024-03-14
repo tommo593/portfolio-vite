@@ -1,10 +1,13 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
+import ParticleBg from "./components/ParticleBg";
 
 function App() {
   return (
     <>
       <div>
-        <h1>Hi there, my name is Yu Xinqgen</h1>
+        <Navbar />
+        <ParticleBg />
       </div>
     </>
   );
