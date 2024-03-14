@@ -6,7 +6,7 @@ import logo from "/logo.jpg";
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
-  const linksRef = useRef(null);
+  const linksRef: any = useRef(null);
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
