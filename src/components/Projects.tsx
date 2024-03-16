@@ -5,11 +5,10 @@ const Projects = () => {
 
   return (
     <div className="py-8">
-      <h1 className="text-center">Projects</h1>
-      <div>
+      <h1 className="text-center py-4">Projects</h1>
+      <div className="text-center">
         <button onClick={() => setOpen(!open)}>Click</button>
-        {open && <p>Open!</p>}
-        <img src="mockup.jpg" />
+        {open && <p>Hi Dan!</p>}
       </div>
     </div>
   );
