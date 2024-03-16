@@ -1,4 +1,12 @@
-import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaGithub,
+  FaDiscord,
+  FaLinkedin,
+  FaCamera,
+  FaPhone,
+  FaEnvelope,
+  FaFile,
+} from "react-icons/fa";
 
 export const links = [
   {
@@ -31,22 +39,28 @@ export const links = [
 export const social = [
   {
     id: 1,
-    url: "https://www.twitter.com",
-    icon: <FaFacebook />,
+    url: "https://www.github.com/tommo593",
+    icon: <FaGithub />,
   },
   {
     id: 2,
-    url: "https://www.twitter.com",
-    icon: <FaTwitter />,
+    url: "https://discord.gg/ZKynHuhVT4",
+    icon: <FaDiscord />,
   },
   {
     id: 3,
-    url: "https://www.twitter.com",
+    url: "https://www.linkedin.com/tomohanlon",
     icon: <FaLinkedin />,
   },
   {
     id: 4,
-    url: "https://www.twitter.com",
-    icon: <FaBehance />,
+    url: "https://tommo593.github.io/portfolio",
+    icon: <FaCamera />,
+  },
+  { id: 5, icon: <FaPhone /> },
+  { id: 6, icon: <FaEnvelope /> },
+  {
+    id: 7,
+    icon: <FaFile />,
   },
 ];

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { links, social } from "../assets/constants";
+import { Tooltip } from "react-tooltip";
 import logo from "/logo.jpg";
 
 const SocialIcons = () => {
@@ -36,7 +37,14 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} className="logo" alt="logo" />
+          <Tooltip />
+          <img
+            src={logo}
+            className="logo"
+            alt="logo"
+            data-tooltip-id="my-tooltip"
+            data-tooltip-content="Hello world!"
+          />
           <button
             className="nav-toggle"
             onClick={() => setShowLinks(!showLinks)}
