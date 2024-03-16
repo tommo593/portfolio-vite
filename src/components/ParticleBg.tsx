@@ -14,7 +14,7 @@ const ParticleBg = () => {
     });
   }, []);
 
-  const particlesLoaded: any = (container?: Container) => {
+  const particlesLoaded = async (container?: Container) => {
     console.log(container);
   };
 
