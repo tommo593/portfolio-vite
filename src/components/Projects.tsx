@@ -7,8 +7,13 @@ const Projects = () => {
     <div className="py-8">
       <h1 className="text-center py-4">Projects</h1>
       <div className="text-center">
-        <button onClick={() => setOpen(!open)}>Click</button>
-        {open && <p>Hi Dan!</p>}
+        <button
+          className="animate-pulse font-bold py-4"
+          onClick={() => setOpen(!open)}
+        >
+          Click
+        </button>
+        {open && <p>You rascal</p>}
       </div>
     </div>
   );

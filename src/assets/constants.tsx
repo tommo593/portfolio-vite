@@ -1,4 +1,11 @@
-import { FaGithub, FaDiscord, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaDiscord,
+  FaLinkedin,
+  FaPhone,
+  FaEnvelope,
+  FaFile,
+} from "react-icons/fa";
 
 export const links = [
   {
@@ -44,17 +51,10 @@ export const social = [
     url: "https://www.linkedin.com/tomohanlon",
     icon: <FaLinkedin />,
   },
-  /*
-  {
-    id: 4,
-    url: "https://tommo593.github.io/portfolio",
-    icon: <FaCamera />,
-  } */
-  /*
+];
+
+export const contactInfo = [
   { id: 5, icon: <FaPhone /> },
   { id: 6, icon: <FaEnvelope /> },
-   {
-    id: 7,
-    icon: <FaFile />,
-  }, */
+  { id: 7, icon: <FaFile /> },
 ];
