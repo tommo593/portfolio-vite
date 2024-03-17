@@ -10,11 +10,12 @@ const About = () => {
               I am a self-taught developer with over a years personal experience
               using React and other popular Front End frameworks. Naturally, I
               started off by using The Holy Trinity, HTML, CSS, JS and broadened
-              my horizons. I've taught myself initially by completing courses on
-              Codecademy and then building personal projects. I have completed
-              courses in but not limited to: React, Angular, MongoDB, Node,
-              TypeScript, Phaser.js etc. Outside of programming, I believe I
-              have fantastic communication skills, coaching ability and people
+              my horizons.
+              <br /> I've taught myself initially by completing courses on
+              Codecademy and then building personal projects. <br />I have
+              completed courses in but not limited to: React, Angular, MongoDB,
+              Node, TypeScript, Phaser.js etc. Outside of programming, I believe
+              I have fantastic communication skills, coaching ability and people
               management skills.
             </p>
           </div>
@@ -42,14 +43,17 @@ const About = () => {
               When I started learning how to code I decided I didn't want to
               just do courses and hope for the best. I have always actively
               sought how to get the best information possible and also give back
-              to the community. Using this logic I decided to start up my own
-              Discord server with the mind of helping others find their first
-              role too. I understood that people would find roles and would then
-              be able to share their story with others showing that it's
-              achievable, but also providing steps as to what others should do
-              if they want to be successful in this field. This community has
-              grown to over 250 members since and is growing all the time. You
-              can also be a member by clicking the Discord icon in the nav bar!
+              to the community. <br />
+              Using this logic I decided to start up my own Discord server with
+              the mind of helping others find their first role too. I understood
+              that people would find roles and would then be able to share their
+              story with others showing that it's achievable, but also providing
+              steps as to what others should do if they want to be successful in
+              this field.
+              <br />
+              This community has grown to over 250 members since and is growing
+              all the time. You can also be a member by clicking the Discord
+              icon in the nav bar!
             </p>
           </div>
         </div>

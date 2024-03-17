@@ -13,7 +13,27 @@ const Projects = () => {
         >
           Click
         </button>
-        {open && <p>You rascal</p>}
+        {open && <p className="pb-4">You rascal</p>}
+      </div>
+      <div className="flex flex-row justify-center space-x-8 pt-4 cursor-pointer">
+        <a href="https://github.com/tommo593/portfolio-vite">
+          <img
+            src="screenshot3.png"
+            className="max-h-96 rounded rounded-r-none transition hover:scale-125 duration-300"
+          />
+        </a>
+        <a href="https://job-satisfaction-ts.vercel.app/">
+          <img
+            src="screenshot2.png"
+            className="max-h-96 transition hover:scale-125 duration-300"
+          />
+        </a>
+        <a href="https://github.com/tommo593/hagl-nextjs">
+          <img
+            src="screenshot1.png"
+            className="max-h-96 rounded rounded-l-none transition hover:scale-125 duration-300"
+          />
+        </a>
       </div>
     </div>
   );
