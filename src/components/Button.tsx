@@ -6,9 +6,7 @@ type ButtonProps = {
 const Button = ({ type, title }: ButtonProps) => {
   return (
     <button className="text-center rounded border border-gray-600" type={type}>
-      <label className="bold-16 whitespace-nowrap cursor-pointer">
-        {title}
-      </label>
+      <label className="bold-16 cursor-pointer">{title}</label>
     </button>
   );
 };
