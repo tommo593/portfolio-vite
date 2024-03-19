@@ -28,11 +28,7 @@ const About = () => {
               present
             </p>
             <p className="py-2">
-              Various Temp Roles (Gotta pay the bills) & upskilling | Nov 2022 -
-              June 2023
-            </p>
-            <p className="py-2">
-              Self-employed Gym Owner | TKO: HQ | June 2020 - Aug 2022
+              Self-employed Gym Owner | TKO: HQ | June 2020 - May 2023
             </p>
           </div>
         </div>
