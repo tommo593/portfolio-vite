@@ -1,10 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { FaPhone, FaEnvelope, FaFile } from "react-icons/fa";
-
-type Contact = {
-  parameter: boolean;
-};
+import { contactInfo } from "../assets/constants";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
@@ -47,7 +43,7 @@ const Contact = () => {
         {""}
         <form
           onSubmit={sendEmail}
-          className="flex flex-col max-w-80 justify-center"
+          className="flex flex-col max-w-80 justify-center py-2"
         >
           <label>Name</label>
           <input type="text" name="user_name" />
@@ -59,21 +55,19 @@ const Contact = () => {
             type="submit"
             value="Send"
             disabled={isSubmitting}
-            className="rounded border border-gray-100 shadow p-2 transition bg-gradient-to-r from-blue-200 to-blue-400 cursor-pointer max-w-28"
+            className="rounded border border-gray-100 shadow p-2 transition bg-gradient-to-r from-blue-200 to-blue-300 cursor-pointer max-w-28"
           />
           {stateMessage && <p>{stateMessage}</p>}
         </form>
       </div>
       <div className="flex flex-row justify-center space-x-8 pb-8">
-        <div>
-          <FaPhone />
-        </div>
-        <div>
-          <FaEnvelope />
-        </div>
-        <div>
-          <FaFile />
-        </div>
+        <ul className="social-icons cursor-pointer">
+          {contactInfo.map((contactInfo) => (
+            <li key={contactInfo.id}>
+              <a>{contactInfo.icon}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

@@ -6,11 +6,16 @@ const About = () => {
   const [open2, setOpen2] = useState<boolean>(false);
 
   return (
-    <div className="text-center py-8">
+    <div className="text-center py-8 flex flex-col">
       <h1 className="py-4">About Me</h1>
-      <div className="flex flex-col justify-center">
-        <div className="text-center max-w-md justify-center">
-          <button onClick={() => setOpen(!open)}>Skills</button>
+      <div className="flex flex-col">
+        <div className="max-w-md">
+          <button
+            onClick={() => setOpen(!open)}
+            className="w-36 rounded border border-gray-100 shadow p-2 transition bg-gradient-to-r from-blue-200 to-blue-400 cursor-pointer max-w-28"
+          >
+            Skills
+          </button>
           {open && (
             <div className="rounded text-center text-sm py-2 hover:bg-blue-200 hover:shadow duration-500">
               <p>
@@ -18,9 +23,10 @@ const About = () => {
                 experience using React and other popular Front End frameworks.
                 Naturally, I started off by using The Holy Trinity, HTML, CSS,
                 JS and broadened my horizons.
-                <br /> I've taught myself initially by completing courses on
-                Codecademy and then building personal projects. <br />I have
-                completed courses in but not limited to: React, Angular,
+                <br /> 
+                I've taught myself initially by completing courses on
+                Codecademy and then building personal projects.
+                <br />I have completed courses in but not limited to: React, Angular,
                 MongoDB, Node, TypeScript, Phaser.js etc. Outside of
                 programming, I believe I have fantastic communication skills,
                 coaching ability and people management skills.
@@ -29,7 +35,12 @@ const About = () => {
           )}
         </div>
         <div className="flex flex-col max-w-md">
-          <button onClick={() => setOpen1(!open1)}>Experience</button>
+          <button
+            onClick={() => setOpen1(!open1)}
+            className="w-36 rounded border border-gray-100 shadow p-2 transition bg-gradient-to-r from-blue-200 to-blue-400 cursor-pointer max-w-28"
+          >
+            Experience
+          </button>
           {open1 && (
             <div className="rounded text-center text-sm hover:bg-blue-200 hover:shadow duration-500">
               <p className=" py-2">
@@ -43,14 +54,20 @@ const About = () => {
           )}
         </div>
         <div className="flex flex-col max-w-md">
-          <button onClick={() => setOpen2(!open2)}>Achievements</button>
+          <button
+            onClick={() => setOpen2(!open2)}
+            className="w-36 rounded border border-gray-100 shadow p-2 transition bg-gradient-to-r from-blue-200 to-blue-400 cursor-pointer max-w-28"
+          >
+            Achievements
+          </button>
           {open2 && (
             <div className="rounded text-center text-sm hover:bg-blue-200 hover:shadow duration-500">
               <p>
                 When I started learning how to code I decided I didn't want to
                 just do courses and hope for the best. I have always actively
                 sought how to get the best information possible and also give
-                back to the community. <br />
+                back to the community.
+                <br />
                 Using this logic I decided to start up my own Discord server
                 with the mind of helping others find their first role too. I
                 understood that people would find roles and would then be able
