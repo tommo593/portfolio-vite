@@ -6,27 +6,28 @@ const About = () => {
   const [open2, setOpen2] = useState<boolean>(false);
 
   return (
-    <div className="text-center py-8 flex flex-col">
+    <div className="text-center py-8">
       <h1 className="py-4">About Me</h1>
-      <div className="flex flex-col">
-        <div className="max-w-md">
+      <div className="grid grid-cols-3">
+        <div className="max-w-md items-center py-2">
           <button
             onClick={() => setOpen(!open)}
-            className="w-36 rounded border border-gray-100 shadow p-2 transition bg-gradient-to-r from-blue-200 to-blue-400 cursor-pointer max-w-28"
+            className="w-36 rounded p-2 transition-transform hover:bg-gradient-to-r from-blue-200 to-blue-400 cursor-pointer max-w-28 py-2 animate-pulse"
           >
             Skills
           </button>
           {open && (
-            <div className="rounded text-center text-sm py-2 hover:bg-blue-200 hover:shadow duration-500">
-              <p>
+            <div className="rounded text-center text-sm">
+              <p className=" py-2">
                 I am a self-taught developer with over a years personal
                 experience using React and other popular Front End frameworks.
-                Naturally, I started off by using The Holy Trinity, HTML, CSS,
+                Naturally, I started off by using The Holy Trinity, HTML, CSS, 
                 JS and broadened my horizons.
                 <br /> 
                 I've taught myself initially by completing courses on
                 Codecademy and then building personal projects.
-                <br />I have completed courses in but not limited to: React, Angular,
+                <br />
+                I have completed courses in but not limited to: React, Angular,
                 MongoDB, Node, TypeScript, Phaser.js etc. Outside of
                 programming, I believe I have fantastic communication skills,
                 coaching ability and people management skills.
@@ -34,15 +35,15 @@ const About = () => {
             </div>
           )}
         </div>
-        <div className="flex flex-col max-w-md">
+        <div className="flex flex-col max-w-md items-center py-2">
           <button
             onClick={() => setOpen1(!open1)}
-            className="w-36 rounded border border-gray-100 shadow p-2 transition bg-gradient-to-r from-blue-200 to-blue-400 cursor-pointer max-w-28"
+            className="w-36 rounded p-2 hover:bg-gradient-to-r from-blue-200 to-blue-400 duration-500 cursor-pointer max-w-28 animate-pulse"
           >
             Experience
           </button>
           {open1 && (
-            <div className="rounded text-center text-sm hover:bg-blue-200 hover:shadow duration-500">
+            <div className="rounded text-center text-sm">
               <p className=" py-2">
                 Corporate Security Officer | Dakin Security Services | June 2023
                 - present
@@ -53,16 +54,16 @@ const About = () => {
             </div>
           )}
         </div>
-        <div className="flex flex-col max-w-md">
+        <div className="flex flex-col max-w-md items-center py-2">
           <button
             onClick={() => setOpen2(!open2)}
-            className="w-36 rounded border border-gray-100 shadow p-2 transition bg-gradient-to-r from-blue-200 to-blue-400 cursor-pointer max-w-28"
+            className="w-36 rounded transition hover:bg-gradient-to-r from-blue-200 to-blue-400 cursor-pointer max-w-28 py-2 animate-pulse"
           >
             Achievements
           </button>
           {open2 && (
-            <div className="rounded text-center text-sm hover:bg-blue-200 hover:shadow duration-500">
-              <p>
+            <div className="rounded text-center text-sm">
+              <p className=" py-2">
                 When I started learning how to code I decided I didn't want to
                 just do courses and hope for the best. I have always actively
                 sought how to get the best information possible and also give

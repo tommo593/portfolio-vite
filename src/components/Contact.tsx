@@ -4,7 +4,7 @@ import { contactInfo } from "../assets/constants";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
-  const [stateMessage, setStateMessage] = useState(null);
+  const [stateMessage, setStateMessage] = useState<string>(null);
   const sendEmail = (e) => {
     e.persist();
     e.preventDefault();
@@ -17,14 +17,14 @@ const Contact = () => {
         process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
-        (result) => {
+        () => {
           setStateMessage("Message sent!");
           setIsSubmitting(false);
           setTimeout(() => {
             setStateMessage(null);
           }, 5000); // hide message after 5 seconds
         },
-        (error) => {
+        () => {
           setStateMessage("Something went wrong, please try again later");
           setIsSubmitting(false);
           setTimeout(() => {
@@ -36,6 +36,7 @@ const Contact = () => {
     // Clears the form after sending the email
     e.target.reset();
   };
+
   return (
     <div>
       <h1 className="text-center py-8">Contact</h1>
