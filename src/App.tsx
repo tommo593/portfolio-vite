@@ -5,6 +5,7 @@ import TechStack from "./components/TechStack";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Duolingo from "./components/Duolingo"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <ParticleBg />
         <TechStack />
+        <Duolingo />
         <About />
         <Projects />
         <Contact />

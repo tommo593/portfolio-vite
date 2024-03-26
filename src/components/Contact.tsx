@@ -4,7 +4,7 @@ import { contactInfo } from "../assets/constants";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
-  const [stateMessage, setStateMessage] = useState<string>(null);
+  const [stateMessage, setStateMessage] = useState<string | null>(null);
   const sendEmail = (e) => {
     e.persist();
     e.preventDefault();
