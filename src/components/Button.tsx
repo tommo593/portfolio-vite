@@ -6,7 +6,7 @@ type ButtonProps = {
 const Button = ({ type, title }: ButtonProps) => {
   return (
     <button
-      className="text-center items-center rounded border border-gray-100 shadow p-2 transition bg-gradient-to-r from-blue-200 to-blue-400"
+      className="text-center items-center rounded border border-gray-100 shadow py-2 bg-gradient-to-r from-blue-200 to-blue-400"
       type={type}
     >
       <label className="bold-16 cursor-pointer text-white">{title}</label>

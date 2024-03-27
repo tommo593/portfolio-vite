@@ -1,7 +1,7 @@
 const Projects = () => {
   return (
     <div className="py-8">
-      <h1 className="text-center py-12">Projects</h1>
+      <h3 className="text-center py-12">Projects</h3>
       <div className="flex flex-row justify-center space-x-8 pt-4 cursor-pointer">
         <a href="https://github.com/tommo593/portfolio-vite">
           <img

@@ -7,7 +7,7 @@ const About = () => {
 
   return (
     <div className="text-center py-8">
-      <h1 className="py-4">About Me</h1>
+      <h3 className="py-4">About Me</h3>
       <div className="grid grid-cols-3">
         <div className="max-w-md items-center py-2">
           <button

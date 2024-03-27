@@ -100,17 +100,17 @@ export const Contact = () => {
   return (
     <div>
       <div>
-    <h1 className="text-center py-8">Contact</h1>
+    <h3 className="text-center py-8">Contact</h3>
     </div>
     <div>
-    <form ref={form} onSubmit={sendEmail} className="max-w-96 flex flex-col justify-center m-auto">
+    <form ref={form} onSubmit={sendEmail} className="max-w-96 flex flex-col m-auto justify-between">
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
       <input type="email" name="user_email" />
       <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
+      <textarea name="message" className="max-h-80 pb-4" />
+      <input type="submit" value="Send" className="pb-12" />
     </form>
     </div>
     </div>
