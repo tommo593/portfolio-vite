@@ -258,6 +258,9 @@ ul {
 nav {
   background: var(--white);
   box-shadow: var(--shadow-1);
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 .nav-header {
   display: flex;

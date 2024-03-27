@@ -1,11 +1,11 @@
-import { useState } from "react";
+/* import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { contactInfo } from "../assets/constants";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [stateMessage, setStateMessage] = useState<string | null>(null);
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.persist();
     e.preventDefault();
     setIsSubmitting(true);
@@ -32,9 +32,6 @@ const Contact = () => {
           }, 5000); // hide message after 5 seconds
         }
       );
-
-    // Clears the form after sending the email
-    e.target.reset();
   };
 
   return (
@@ -71,6 +68,45 @@ const Contact = () => {
         </ul>
       </div>
     </div>
+  );
+}; */
+
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+export const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if(form.current) {
+    emailjs
+      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      
+      );
+    }
+  };
+
+  return (
+    <form ref={form} onSubmit={sendEmail} className='grid grid-cols-1'>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
   );
 };
 

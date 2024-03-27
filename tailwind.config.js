@@ -5,7 +5,8 @@ export default {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      feather_green: '#58cc02'
+      feather_green: '#58cc02',
+      mask_green: '#89e219'
     },
     extend: {},
   },
