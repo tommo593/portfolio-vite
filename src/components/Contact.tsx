@@ -98,7 +98,12 @@ export const Contact = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className='grid grid-cols-1'>
+    <div>
+      <div>
+    <h1 className="text-center py-8">Contact</h1>
+    </div>
+    <div>
+    <form ref={form} onSubmit={sendEmail} className="max-w-96 flex flex-col justify-center m-auto">
       <label>Name</label>
       <input type="text" name="user_name" />
       <label>Email</label>
@@ -107,6 +112,8 @@ export const Contact = () => {
       <textarea name="message" />
       <input type="submit" value="Send" />
     </form>
+    </div>
+    </div>
   );
 };
 

@@ -347,3 +347,6 @@ nav {
     color: var(--primary-300);
   }
 }
+
+@layer utilities {
+}
