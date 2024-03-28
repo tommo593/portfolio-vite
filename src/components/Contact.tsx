@@ -73,6 +73,7 @@ const Contact = () => {
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Button from './Button';
 
 export const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -104,13 +105,13 @@ export const Contact = () => {
     </div>
     <div>
     <form ref={form} onSubmit={sendEmail} className="max-w-96 flex flex-col m-auto justify-between">
-      <label>Name</label>
-      <input type="text" name="user_name" className="pb-4" />
-      <label>Email</label>
-      <input type="email" name="user_email" className="pb-4" />
-      <label>Message</label>
-      <textarea name="message" className="h-1/5 pb-4 resize-none" />
-      <input type="submit" value="Send" className="pb-28" />
+      <label className="mb-2">Name</label>
+      <input type="text" name="user_name" className="mb-4" />
+      <label className="mb-2">Email</label>
+      <input type="email" name="user_email" className="mb-4" />
+      <label className="mb-2">Message</label>
+      <textarea name="message" className="h-1/5 pb-8 mb-4 resize-none" />
+      <Button type="submit" title="Submit"/>
     </form>
     </div>
     </div>
