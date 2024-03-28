@@ -7,7 +7,6 @@ import Contact from "./components/Contact";
 import Duolingo from "./components/Duolingo"
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import EmblaCarousel from "./components/EmblaCarousel";
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
         <Hero />
         <About />
         <Projects />
-        <EmblaCarousel />
         <Contact />
         <Duolingo />
         <Footer />
