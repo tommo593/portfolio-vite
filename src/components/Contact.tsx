@@ -105,11 +105,11 @@ export const Contact = () => {
     <div>
     <form ref={form} onSubmit={sendEmail} className="max-w-96 flex flex-col m-auto justify-between">
       <label>Name</label>
-      <input type="text" name="user_name" />
+      <input type="text" name="user_name" className="pb-4" />
       <label>Email</label>
-      <input type="email" name="user_email" />
+      <input type="email" name="user_email" className="pb-4" />
       <label>Message</label>
-      <textarea name="message" className="max-h-80 pb-4" />
+      <textarea name="message" className="h-1/5 pb-4 resize-none" />
       <input type="submit" value="Send" className="pb-28" />
     </form>
     </div>

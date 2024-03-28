@@ -1,4 +1,5 @@
 const Projects = () => {
+
   return (
     <div className="py-8">
       <h3 className="text-center py-12">Projects</h3>
@@ -8,9 +9,6 @@ const Projects = () => {
             src="screenshot3.png"
             className="max-h-96 rounded-md rounded-r-none transition hover:scale-125 duration-300"
           />
-          {/*<label className="absolute z-10 bg-white bg-opacity-75">
-            This page's code!
-  </label>*/}
         </a>
         <a href="https://job-satisfaction-ts.vercel.app/">
           <img
