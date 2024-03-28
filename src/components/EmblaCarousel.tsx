@@ -1,7 +1,6 @@
 import { useCallback, useEffect } from 'react'
 import { EmblaCarouselType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
-import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures'
 
 export function EmblaCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel()
