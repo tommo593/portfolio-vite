@@ -361,3 +361,8 @@ nav {
   flex: 0 0 100%;
   min-width: 0;
 }
+
+.project-image:hover {
+  -webkit-mask-image: linear-gradient(rgb(0, 0, 0), transparent);
+  mask-image: linear-gradient(rgb(0, 0, 0), transparent);
+}
