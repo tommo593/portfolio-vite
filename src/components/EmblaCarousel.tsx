@@ -4,7 +4,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures'
 
 export function EmblaCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel(emblaRoot, { loop: false }, [WheelGesturesPlugin()])
+  const [emblaRef, emblaApi] = useEmblaCarousel()
 
   const logSlidesInView = useCallback((emblaApi: EmblaCarouselType) => {
     console.log(emblaApi.slidesInView())
@@ -15,7 +15,7 @@ export function EmblaCarousel() {
   }, [emblaApi, logSlidesInView])
 
   return (
-    <div className="embla border w-1/4 m-auto pt-12 pb-12" ref={emblaRef}>
+    <div className="embla border w-1/4 m-auto pt-20 pb-20 mt-12 mb-12" ref={emblaRef}>
       <div className="embla__container">
         <div className="embla__slide">Slide 1</div>
         <div className="embla__slide">Slide 2</div>
