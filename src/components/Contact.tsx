@@ -110,7 +110,7 @@ export const Contact = () => {
       <input type="email" name="user_email" />
       <label>Message</label>
       <textarea name="message" className="max-h-80 pb-4" />
-      <input type="submit" value="Send" className="pb-12" />
+      <input type="submit" value="Send" className="pb-28" />
     </form>
     </div>
     </div>

@@ -15,7 +15,7 @@ const Duolingo: React.FC = () => {
 
   return (
     <div className="max-w-80 m-auto flex flex-row">
-        <p className="max-h-28 bg-mask_green shadow-md p-2 rounded-md">In my spare time, I love to practice Spanish and currently have a {dailyCount} day streak on Duolingo!</p>
+        <p className="max-h-28 bg-gradient-to-b from-feather_green to-mask_green shadow-lg p-2 rounded-md">In my spare time, I love to practice Spanish and currently have a {dailyCount} day streak on Duolingo!</p>
         <img src="./duo.svg" className="max-h-20"/>
     </div>
   );
