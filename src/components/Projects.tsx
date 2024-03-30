@@ -1,9 +1,8 @@
 const Projects = () => {
-
   return (
     <div className="py-8">
-      <h3 className="text-center py-12">Projects</h3>
-      <div className="flex flex-row justify-center space-x-8 pt-4 cursor-pointer">
+      <h3 className="py-12 text-center">Projects</h3>
+      {/* <div className="flex flex-row justify-center space-x-8 pt-4 cursor-pointer">
         <div><a href="https://github.com/tommo593/portfolio-vite">
           <img
             src="screenshot3.png"
@@ -18,8 +17,8 @@ const Projects = () => {
           <img
             src="screenshot1.png"
             className="project-image max-h-96 rounded-md rounded-l-none transition hover:scale-125 duration-300"
-          /></a></div> 
-      </div>
+  /></a></div>
+  </div> */}
     </div>
   );
 };
