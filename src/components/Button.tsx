@@ -1,15 +1,15 @@
 type ButtonProps = {
-  type: "button" | "submit";
+  type: 'button' | 'submit';
   title: string;
 };
 
 const Button = ({ type, title }: ButtonProps) => {
   return (
     <button
-      className="text-center items-center rounded border border-transparent shadow py-2 bg-gradient-to-t from-baby_blue to-dark_baby_blue"
+      className="items-center rounded border border-transparent bg-gradient-to-t from-baby_blue to-dark_baby_blue py-2 text-center shadow"
       type={type}
     >
-      <label className="bold-16 cursor-pointer text-white">{title}</label>
+      <label className="bold-16 text-white cursor-pointer">{title}</label>
     </button>
   );
 };
