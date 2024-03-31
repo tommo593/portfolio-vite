@@ -11,13 +11,13 @@ const About = () => {
     <div className="py-8 text-center">
       <h3 className="py-12">About Me</h3>
       <div className="flex-basis m-auto flex max-w-4xl justify-between">
-        <div>
+        {/* <div>
           <img src="/bjj.jpg" alt="BJJ class" className="max-h-80 rounded-md" />
-        </div>
+  </div>  */}
         <div className="max-w-md flex-col items-center py-2">
           <button
             onClick={() => handleTabClick(0)}
-            className={`from-blue-200 to-blue-400 w-36 max-w-28 animate-pulse cursor-pointer rounded p-2 py-2 transition-transform hover:bg-gradient-to-r ${
+            className={`w-36 max-w-28 animate-pulse cursor-pointer rounded p-2 py-2 ${
               openTab === 0 ? 'bg-gradient-to-r' : ''
             }`}
           >
@@ -41,7 +41,7 @@ const About = () => {
         <div className="flex max-w-md flex-col items-center py-2">
           <button
             onClick={() => handleTabClick(1)}
-            className={`from-blue-200 to-blue-400 w-36 max-w-28 animate-pulse cursor-pointer rounded p-2 duration-500 hover:bg-gradient-to-r ${
+            className={`w-36 max-w-28 animate-pulse cursor-pointer rounded p-2 duration-500 ${
               openTab === 1 ? 'bg-gradient-to-r' : ''
             }`}
           >
@@ -57,7 +57,7 @@ const About = () => {
         <div className="flex max-w-md flex-col items-center py-2">
           <button
             onClick={() => handleTabClick(2)}
-            className={`from-blue-200 to-blue-400 w-36 max-w-28 animate-pulse cursor-pointer rounded py-2 transition hover:bg-gradient-to-r ${
+            className={`w-36 max-w-28 animate-pulse cursor-pointer rounded py-2 transition${
               openTab === 2 ? 'bg-gradient-to-r' : ''
             }`}
           >
