@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { IMAGES } from '../carousel/carousel_images/constants';
 
 interface SlideProps {
   src: string;
@@ -11,8 +10,8 @@ export function EmblaCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
-      slidesToScroll: 1,
-      duration: 8000,
+      slidesToScroll: 3,
+      duration: 4000,
       breakpoints: {
         '(min-width: 1024px)': { slidesToScroll: 3 },
       },
@@ -50,19 +49,23 @@ export function EmblaCarousel() {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
+  const Slide: React.FC<SlideProps> = ({ src, alt }) => {
+    return (
+      <div>
+        <div className="embla__slide">
+          <img src={src} alt={alt} />
+        </div>
+      </div>
+    );
+  };
+
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
+    <div className="embla" ref={emblaRef}>
+      <div className="embla__viewport">
         <div className="embla__container">
-          <img
-            src=""
-            alt=""
-            {...IMAGES.map((IMAGES) => (
-              <li key={IMAGES.id}>
-                <a>{IMAGES.url}</a>
-              </li>
-            ))}
-          />
+          <img src="/screenshot1.png" alt="" className="embla__slide" />
+          <img src="/screenshot2.png" alt="" className="embla__slide" />
+          <img src="/screenshot3.png" alt="" className="embla__slide" />
         </div>
         <button
           className="embla__prev text-white_text my-2 items-center rounded border border-transparent bg-gradient-to-t from-baby_blue to-dark_baby_blue px-2 text-center shadow"
@@ -80,18 +83,5 @@ export function EmblaCarousel() {
     </div>
   );
 }
-
-interface SlideProps {
-  src: string;
-  alt: string;
-}
-
-const Slide: React.FC<SlideProps> = ({ src, alt }) => {
-  return (
-    <div className="embla__slide">
-      <img src={src} alt={alt} />
-    </div>
-  );
-};
 
 export default EmblaCarousel;
