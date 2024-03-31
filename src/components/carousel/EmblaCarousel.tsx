@@ -1,11 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 
-interface SlideProps {
-  src: string;
-  alt: string;
-}
-
 export function EmblaCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
@@ -49,23 +44,13 @@ export function EmblaCarousel() {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
-  const Slide: React.FC<SlideProps> = ({ src, alt }) => {
-    return (
-      <div>
-        <div className="embla__slide">
-          <img src={src} alt={alt} />
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div className="embla" ref={emblaRef}>
       <div className="embla__viewport">
         <div className="embla__container">
-          <img src="/screenshot1.png" alt="" className="embla__slide" />
-          <img src="/screenshot2.png" alt="" className="embla__slide" />
-          <img src="/screenshot3.png" alt="" className="embla__slide" />
+          <img src="/screenshot1.png" alt="" className="embla__slide max-h-80" />
+          <img src="/screenshot2.png" alt="" className="embla__slide max-h-80" />
+          <img src="/screenshot3.png" alt="" className="embla__slide max-h-80" />
         </div>
         <button
           className="embla__prev text-white_text my-2 items-center rounded border border-transparent bg-gradient-to-t from-baby_blue to-dark_baby_blue px-2 text-center shadow"
