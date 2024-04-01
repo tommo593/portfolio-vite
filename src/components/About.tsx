@@ -17,11 +17,7 @@ export default function About() {
       <h3 className="py-8 text-center">About</h3>
       <div className="m-auto max-w-4xl">
         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-          <AccordionSummary
-            expandIcon={<FaAngleDown className="dark_baby_blue" />}
-            aria-controls="panel1bh-content"
-            id="panel1bh-header"
-          >
+          <AccordionSummary expandIcon={<FaAngleDown />} aria-controls="panel1bh-content" id="panel1bh-header">
             <Typography sx={{ width: '33%', flexShrink: 0 }}>About Me</Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -44,8 +40,10 @@ export default function About() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <p className="py-2">Corporate Security Officer | Dakin Security Services | June 2023 - present</p>
-              <p className="py-2">Self-employed Gym Owner | TKO: HQ | June 2020 - May 2023</p>
+              Corporate Security Officer | Dakin Security Services | June 2023 - present
+              <br />
+              <br />
+              Self-employed Gym Owner | TKO: HQ | June 2020 - May 2023
             </Typography>
           </AccordionDetails>
         </Accordion>
