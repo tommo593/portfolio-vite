@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+// TODO Organise information to the left and decorate tabs
+
 const About = () => {
   const [openTab, setOpenTab] = useState<number | null>(null);
 
@@ -24,7 +26,7 @@ const About = () => {
             Skills
           </button>
           {openTab === 0 && (
-            <div className="rounded text-center text-sm">
+            <div className="rounded text-left text-sm">
               <p className="py-2">
                 I am a self-taught developer with over a years personal experience using React and other popular Front
                 End frameworks. Naturally, I started off by using The Holy Trinity, HTML, CSS, JS and broadened my
@@ -48,7 +50,7 @@ const About = () => {
             Experience
           </button>
           {openTab === 1 && (
-            <div className="rounded text-center text-sm">
+            <div className="rounded text-left text-sm">
               <p className="py-2">Corporate Security Officer | Dakin Security Services | June 2023 - present</p>
               <p className="py-2">Self-employed Gym Owner | TKO: HQ | June 2020 - May 2023</p>
             </div>
@@ -64,7 +66,7 @@ const About = () => {
             Achievements
           </button>
           {openTab === 2 && (
-            <div className="rounded text-center text-sm">
+            <div className="rounded text-left text-sm">
               <p className="py-2">
                 When I started learning how to code I decided I didn't want to just do courses and hope for the best. I
                 have always actively sought how to get the best information possible and also give back to the

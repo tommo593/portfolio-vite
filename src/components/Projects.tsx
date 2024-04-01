@@ -1,24 +1,12 @@
+import EmblaCarousel from './carousel/EmblaCarousel';
+
 const Projects = () => {
   return (
     <div className="py-8">
       <h3 className="py-12 text-center">Projects</h3>
-      {/* <div className="flex flex-row justify-center space-x-8 pt-4 cursor-pointer">
-        <div><a href="https://github.com/tommo593/portfolio-vite">
-          <img
-            src="screenshot3.png"
-            className="project-image max-h-96 rounded-md rounded-r-none transition hover:scale-125 duration-300"
-          /></a></div> 
-       <div><a href="https://job-satisfaction-ts.vercel.app/">
-          <img
-            src="screenshot2.png"
-            className="project-image max-h-96 transition hover:scale-125 duration-300"
-          /></a></div> 
-       <div><a href="https://github.com/tommo593/hagl-nextjs">
-          <img
-            src="screenshot1.png"
-            className="project-image max-h-96 rounded-md rounded-l-none transition hover:scale-125 duration-300"
-  /></a></div>
-  </div> */}
+      <div>
+        <EmblaCarousel />
+      </div>
     </div>
   );
 };
