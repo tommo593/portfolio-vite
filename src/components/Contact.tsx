@@ -27,12 +27,15 @@ export const Contact = () => {
       </div>
       <div>
         <form ref={form} onSubmit={sendEmail} className="m-auto flex max-w-96 flex-col justify-between">
-          <input type="text" name="user_name" placeholder="Your name" className="mb-4 h-8" />
-          <input type="email" name="user_email" placeholder="Your email" className="mb-4 h-8" />
-          <textarea name="message" placeholder="Your message" className="mb-4 h-32 resize-none pb-8" />
+          <label>Name</label>
+          <input type="text" name="user_name" className="mb-4 h-8" />
+          <label>Email</label>
+          <input type="email" name="user_email" className="mb-4 h-8" />
+          <label>Message</label>
+          <textarea name="message" className="mb-4 h-32 resize-none pb-8" />
           <input
             type="submit"
-            title="Submit"
+            value="send"
             className="btn items-center rounded border border-transparent py-2 text-center text-white_text shadow"
           />
         </form>
