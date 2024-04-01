@@ -277,14 +277,14 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--primary-500);
+  color: #75d2fa;
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: var(--primary-700);
+  color: #0ab4fc;
   transform: rotate(90deg);
 }
 .logo {
@@ -301,7 +301,7 @@ nav {
 }
 .links a:hover {
   background: var(--primary-100);
-  color: var(--primary-500);
+  color: #0ab4fc;
   padding-left: 1.5rem;
 }
 
@@ -347,11 +347,11 @@ nav {
     gap: 0.5rem;
   }
   .social-icons a {
-    color: var(--primary-500);
+    color: #75d2fa;
     transition: var(--transition);
   }
   .social-icons a:hover {
-    color: var(--primary-300);
+    color: #0ab4fc;
   }
 }
 
