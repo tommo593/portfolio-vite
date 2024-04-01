@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Button from './Button';
-import { contactInfo } from '../assets/constants';
+// import { contactInfo } from '../assets/constants';
 
 export const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -38,7 +38,7 @@ export const Contact = () => {
           <Button type="submit" title="Submit" />
         </form>
       </div>
-      <div className="flex flex-row justify-center space-x-8 pb-8 pt-8">
+      {/* <div className="flex flex-row justify-center space-x-8 pb-8 pt-8">
         <ul className="social-icons cursor-pointer">
           {contactInfo.map((contactInfo) => (
             <li key={contactInfo.id}>
@@ -46,7 +46,7 @@ export const Contact = () => {
             </li>
           ))}
         </ul>
-      </div>
+          </div> */}
     </div>
   );
 };

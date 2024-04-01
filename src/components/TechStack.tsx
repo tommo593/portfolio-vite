@@ -7,12 +7,12 @@ import {
   TypescriptOriginal,
   GitOriginal,
   JiraOriginal,
-} from "devicons-react";
+} from 'devicons-react';
 
 const TechStack = () => {
   return (
-    <div className="flex flex-row justify-between py-8 px-20">
-      <ReactOriginal className="animate-spin h-28" />
+    <div className="tech-icons flex flex-row justify-between px-20 py-8">
+      <ReactOriginal className="animate-spin" />
       <VitejsOriginal />
       <NextjsOriginal />
       <TypescriptOriginal />
