@@ -13,9 +13,6 @@ const About = () => {
     <div className="py-8 text-center">
       <h3 className="py-12">About Me</h3>
       <div className="flex-basis m-auto flex max-w-4xl justify-between">
-        {/* <div>
-          <img src="/bjj.jpg" alt="BJJ class" className="max-h-80 rounded-md" />
-  </div>  */}
         <div className="max-w-md flex-col items-center py-2">
           <button
             onClick={() => handleTabClick(0)}

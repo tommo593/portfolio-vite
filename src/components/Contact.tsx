@@ -32,12 +32,9 @@ export const Contact = () => {
       </div>
       <div>
         <form ref={form} onSubmit={sendEmail} className="m-auto flex max-w-96 flex-col justify-between">
-          <label className="mb-2">Name</label>
-          <input type="text" name="user_name" className="mb-4" />
-          <label className="mb-2">Email</label>
-          <input type="email" name="user_email" className="mb-4" />
-          <label className="mb-2">Message</label>
-          <textarea name="message" className="mb-4 h-1/5 resize-none pb-8" />
+          <input type="text" name="user_name" placeholder="Your name" className="mb-4 h-8" />
+          <input type="email" name="user_email" placeholder="Your email" className="mb-4 h-8" />
+          <textarea name="message" placeholder="Your message" className="mb-4 h-32 resize-none pb-8" />
           <Button type="submit" title="Submit" />
         </form>
       </div>
@@ -45,7 +42,7 @@ export const Contact = () => {
         <ul className="social-icons cursor-pointer">
           {contactInfo.map((contactInfo) => (
             <li key={contactInfo.id}>
-              <a>{contactInfo.icon}</a>
+              <a href={contactInfo.url}>{contactInfo.icon}</a>
             </li>
           ))}
         </ul>
