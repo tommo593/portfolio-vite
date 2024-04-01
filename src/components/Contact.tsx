@@ -9,18 +9,14 @@ export const Contact = () => {
     e.preventDefault();
 
     if (form.current) {
-      emailjs
-        .sendForm('service_3a1ykjf', 'portfolio_vite', form.current, {
-          publicKey: 'JPMp-qtbiMvF7o0vG',
-        })
-        .then(
-          () => {
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          }
-        );
+      emailjs.sendForm('service_3a1ykjf', 'template_4v0vmcq', form.current, 'JPMp-qtbiMvF7o0vG').then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        }
+      );
     }
   };
 
@@ -37,11 +33,17 @@ export const Contact = () => {
           <input
             type="submit"
             title="Submit"
-            className="cursor-pointer items-center rounded border border-transparent bg-gradient-to-t from-baby_blue to-dark_baby_blue py-2 text-center text-white_text shadow"
+            className="btn items-center rounded border border-transparent py-2 text-center text-white_text shadow"
           />
         </form>
       </div>
-      {/* <div className="flex flex-row justify-center space-x-8 pb-8 pt-8">
+    </div>
+  );
+};
+
+export default Contact;
+
+/* <div className="flex flex-row justify-center space-x-8 pb-8 pt-8">
         <ul className="social-icons cursor-pointer">
           {contactInfo.map((contactInfo) => (
             <li key={contactInfo.id}>
@@ -49,9 +51,4 @@ export const Contact = () => {
             </li>
           ))}
         </ul>
-          </div> */}
-    </div>
-  );
-};
-
-export default Contact;
+          </div> */

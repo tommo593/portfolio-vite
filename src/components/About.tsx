@@ -15,7 +15,7 @@ export default function About() {
   return (
     <div>
       <h3 className="py-8 text-center">About</h3>
-      <div className="m-auto max-w-4xl">
+      <div className="m-auto max-w-3xl text-xs">
         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
           <AccordionSummary expandIcon={<FaAngleDown />} aria-controls="panel1bh-content" id="panel1bh-header">
             <Typography sx={{ width: '33%', flexShrink: 0 }}>About Me</Typography>
