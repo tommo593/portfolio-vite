@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { links, social } from '../assets/constants';
-import logo from '/logo.jpg';
+import logo_cropped from '/logo_cropped.png';
 
 const SocialIcons = () => {
   return (
@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} className="logo" alt="logo" title="Unga Bunga Dev" />
+          <img src={logo_cropped} className="logo" alt="logo" title="Unga Bunga Dev" />
           <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
             <FaBars />
           </button>
