@@ -1,11 +1,9 @@
 const Hero: React.FC = () => {
-                return (
-                    <div>
-                        <img src="logo.jpg" alt="Unga Bunga Dev" title="Unga Bunga Dev" className="m-auto pt-8 pb-8"/>
-                    </div>
-    );
+  return (
+    <div>
+      <img src="coding_bruv_full.png" alt="Coding Bruv" title="Coding Bruv" className="m-auto max-w-sm pb-8 pt-8" />
+    </div>
+  );
 };
 
 export default Hero;
-
-
