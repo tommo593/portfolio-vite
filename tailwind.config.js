@@ -10,6 +10,7 @@ export default {
       baby_blue: '#75d2fa',
       dark_baby_blue: '#0ab4fc',
       white_text: '#ffffff',
+      border_gray: '#c5c7c9',
     },
     extend: {},
   },

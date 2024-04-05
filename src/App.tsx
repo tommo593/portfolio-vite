@@ -13,12 +13,14 @@ function App() {
     <>
       <div>
         <Navbar />
-        <TechStack />
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
-        <Duolingo />
+        <div className="px-4">
+          <TechStack />
+          <Hero />
+          <About />
+          <Projects />
+          <Contact />
+          <Duolingo />
+        </div>
         <Footer />
       </div>
     </>

@@ -11,15 +11,31 @@ import {
 
 const TechStack = () => {
   return (
-    <div className="tech-icons flex flex-row justify-between px-20 py-8">
-      <ReactOriginal className="animate-spin" />
-      <VitejsOriginal />
-      <NextjsOriginal />
-      <TypescriptOriginal />
-      <TailwindcssOriginal />
-      <NodejsOriginal />
-      <GitOriginal />
-      <JiraOriginal />
+    <div className="flex flex-row flex-wrap justify-center gap-8 py-8">
+      <div className="w-10">
+        <ReactOriginal size={40} className="animate-spin" />
+      </div>
+      <div className="w-10">
+        <VitejsOriginal size={40} />
+      </div>
+      <div className="w-10">
+        <NextjsOriginal size={40} />
+      </div>
+      <div className="w-10">
+        <TypescriptOriginal size={40} />
+      </div>
+      <div className="w-10">
+        <TailwindcssOriginal size={40} />
+      </div>
+      <div className="w-10">
+        <NodejsOriginal size={40} />
+      </div>
+      <div className="w-10">
+        <GitOriginal size={40} />
+      </div>
+      <div className="w-10">
+        <JiraOriginal size={40} />
+      </div>
     </div>
   );
 };
