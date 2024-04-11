@@ -1,7 +1,5 @@
 const ParticleBg = () => {
-  return (
-    <div>ParticleBg</div>
-  )
-}
+  return <div>ParticleBg</div>;
+};
 
-export default ParticleBg
+export default ParticleBg;
