@@ -1,6 +1,8 @@
 import { DESKTOP_IMAGES } from '../components/carousel/carousel_images/constants';
 import { useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export function MyWork() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -19,7 +21,8 @@ export function MyWork() {
 
   return (
     <div>
-      <div>
+      <Navbar />
+      <div className="px-4">
         <h3 className="py-12 text-center">My Projects</h3>
         <div className="flex flex-col">
           <div className="mx-auto flex max-w-80 flex-row items-center justify-center overflow-hidden" ref={emblaRef}>
@@ -55,6 +58,7 @@ export function MyWork() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
