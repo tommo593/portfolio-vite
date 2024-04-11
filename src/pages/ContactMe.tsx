@@ -4,10 +4,13 @@ import Footer from '../components/Footer';
 
 const ContactMe = () => {
   return (
-    <div className="px-4 pb-12">
+    <div>
       <Navbar />
-      <Contact />
-      <Footer />
+      <div className="px-4 pb-12">
+        <Navbar />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 };
