@@ -1,32 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-/*
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import AboutMe from '../src/pages/AboutMe.tsx';
-import ContactMe from '../src/pages/ContactMe.tsx';
-import MyWork from '../src/pages/MyWork.tsx';
-*/
 import App from './App.tsx';
 import './index.css';
+import AboutMe from './pages/AboutMe.tsx';
+import MyWork from './pages/MyWork.tsx';
+import ContactMe from './pages/ContactMe.tsx';
 
-/* const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
-    path: 'AboutMe',
+    path: '/',
+    element: <App />,
+  },
+  {
+    path: '/about',
     element: <AboutMe />,
   },
   {
-    path: 'ContactMe',
-    element: <ContactMe />,
-  },
-  {
-    path: 'MyWork',
+    path: '/projects',
     element: <MyWork />,
   },
-]); */
+  {
+    path: '/contact',
+    element: <ContactMe />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    {/* <RouterProvider router={router} /> */}
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
