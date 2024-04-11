@@ -28,7 +28,10 @@ const AboutMe = () => {
             From the very first second I put "Hello World!" in between those P tags and saw that text show in my
             browser, <br />I knew it was a good choice. <br />
             <br />
-            I've been learning to code for over a year now and constantly expanding and improving my skillset.
+            I've been learning to code for over a year now and constantly expanding and improving my skillset. <br />
+            Technologies I have used include but aren't limited to: React, Angular, Next.js, Vite, Node, Express,
+            TypeScript, <br />
+            C++, Phaser.js.
           </p>
         </div>
       </div>
