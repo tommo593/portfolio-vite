@@ -18,7 +18,6 @@ function App() {
           <Hero />
           <About />
           <Projects />
-          <Contact />
           <Duolingo />
         </div>
         <Footer />

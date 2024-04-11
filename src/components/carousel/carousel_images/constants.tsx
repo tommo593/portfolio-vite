@@ -15,3 +15,26 @@ export const IMAGES = [
     title: "This site's code",
   },
 ];
+
+export const DESKTOP_IMAGES = [
+  {
+    src: '/cbss.png',
+    url: '',
+    title: 'This sites code',
+  },
+  {
+    src: '/jsss.png',
+    url: 'https://job-satisfaction-ts.vercel.app/',
+    title: 'Job Satisfaction Survey',
+  },
+  {
+    src: '/hss.png',
+    url: 'https://github.com/tommo593/hagl-nextjs',
+    title: 'An online estate agency',
+  },
+  {
+    src: '/tass.png',
+    url: 'https://github.com/tommo593/travel-app/tree/main',
+    title: 'Travel app',
+  },
+];
