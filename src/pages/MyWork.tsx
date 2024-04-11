@@ -22,11 +22,11 @@ export function MyWork() {
   return (
     <div>
       <Navbar />
-      <div>
+      <div className="px-4">
         <h3 className="py-12 text-center">My Projects</h3>
         <div className="flex flex-col">
           <div className="mx-auto flex max-w-80 flex-row items-center justify-center overflow-hidden" ref={emblaRef}>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-2">
               {DESKTOP_IMAGES.map((image, index) => (
                 <div className="flex-[0_0_100%]" key={index}>
                   <a href={image.url} target="_blank" rel="noopener noreferrer" title={image.title}>
