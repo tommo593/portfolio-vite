@@ -19,7 +19,7 @@ export function MyWork() {
 
   return (
     <div>
-      <div className="px-4">
+      <div>
         <h3 className="py-12 text-center">My Projects</h3>
         <div className="flex flex-col">
           <div className="mx-auto flex max-w-80 flex-row items-center justify-center overflow-hidden" ref={emblaRef}>
