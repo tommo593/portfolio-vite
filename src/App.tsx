@@ -1,11 +1,12 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import TechStack from './components/TechStack';
-import About from './components/About';
 import Duolingo from './components/Duolingo';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
-import Projects from './components/Projects';
+import AboutMe from './pages/AboutMe';
+import MyWork from './pages/MyWork';
+import ContactMe from './pages/ContactMe';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
         <div className="px-4">
           <TechStack />
           <Hero />
-          <About />
-          <Projects />
+          <AboutMe />
+          <MyWork />
+          <ContactMe />
           <Duolingo />
         </div>
         <Footer />

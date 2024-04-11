@@ -1,5 +1,3 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import { DESKTOP_IMAGES } from '../components/carousel/carousel_images/constants';
 import { useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -21,7 +19,6 @@ export function MyWork() {
 
   return (
     <div>
-      <Navbar />
       <div className="px-4">
         <h3 className="py-12 text-center">My Projects</h3>
         <div className="flex flex-col">
@@ -42,7 +39,7 @@ export function MyWork() {
               ))}
             </div>
           </div>
-          <div className="m-auto flex flex-row gap-8 pt-4">
+          <div className="m-auto flex flex-row gap-8 pb-12 pt-4">
             <button
               className="embla__prev btn items-center rounded border border-transparent py-2 text-center text-white_text shadow"
               onClick={scrollPrev}
@@ -58,7 +55,6 @@ export function MyWork() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
