@@ -30,7 +30,7 @@ export const DESKTOP_IMAGES = [
   {
     src: '/hss.png',
     url: 'https://github.com/tommo593/hagl-nextjs',
-    title: 'An online estate agency',
+    title: 'hagl - An online estate agency',
   },
   {
     src: '/tass.png',

@@ -8,7 +8,7 @@ const AboutMe = () => {
       <h3 className="py-12 text-center">About Me</h3>
       <div className="flex flex-row justify-center space-x-8 px-4 text-sm">
         <div>
-          <img src="hols.jpg" alt="Me" className="m-auto max-h-80 rounded" />
+          <img src="hols.jpg" alt="Me" className="m-auto max-h-80 overflow-hidden rounded" />
         </div>
         <div>
           <h4>What have I been doing lately?</h4>
