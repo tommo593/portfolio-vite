@@ -27,7 +27,9 @@ function App() {
             you <br />
             back and forth between them in an infinite loop. Enjoy!
           </p>
-          <Duolingo />
+          <div className="pb-12">
+            <Duolingo />
+          </div>
         </div>
         <Footer />
       </div>
