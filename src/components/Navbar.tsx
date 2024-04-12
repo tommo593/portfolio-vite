@@ -36,7 +36,9 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <img src={cb_nav} className="logo" alt="logo" title="Coding Bruv" />
+          <a href="/">
+            <img src={cb_nav} className="logo" alt="logo" title="Coding Bruv" />
+          </a>
           <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
             <FaBars />
           </button>
