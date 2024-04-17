@@ -6,7 +6,7 @@ const ContactMe = () => {
   return (
     <div>
       <Navbar />
-      <div className="pb-12">
+      <div className="px-4 pb-12">
         <Contact />
       </div>
       <Footer />
