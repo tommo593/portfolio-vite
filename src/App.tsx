@@ -27,11 +27,11 @@ function App() {
             There's about 250 people in there, I'm sure you'll find someone! <br />
             <br />
             You'll also find my most up-to-date CV up there, along with my{' '}
-            <a className="animate-pulse font-bold" href="www.github.com/tommo593">
+            <a className="animate-pulse font-bold" href="https://github.com/tommo593">
               GitHub
             </a>
             ,{' '}
-            <a className="animate-pulse font-bold" href="www.linkedin.com/in/tomohanlon">
+            <a className="animate-pulse font-bold" href="https://linkedin.com/in/tomohanlon">
               LinkedIn
             </a>{' '}
             and plenty of links to send you <br />
