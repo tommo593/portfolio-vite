@@ -24,6 +24,14 @@ export function MyWork() {
       <Navbar />
       <div className="px-4">
         <h3 className="py-12 text-center">My Projects</h3>
+        <div className="m-auto pb-8 text-center">
+          <p>
+            On the carousel below you'll see all of my proudest projects so far.
+            <br />
+            Please click on the tiles to take you to either the live site or the code on GitHub to find out more
+            information!
+          </p>
+        </div>
         <div className="flex flex-col">
           <div className="mx-auto flex max-w-80 flex-row items-center justify-center overflow-hidden" ref={emblaRef}>
             <div className="flex flex-row gap-2">
@@ -35,9 +43,10 @@ export function MyWork() {
                       alt=""
                       height={400}
                       width={800}
-                      className="justify-between rounded border border-border_gray"
+                      className="mb-4 justify-between rounded border border-border_gray"
                     />
                   </a>
+                  <p className="p-2 italic">{image.text}</p>
                 </div>
               ))}
             </div>

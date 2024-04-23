@@ -14,10 +14,13 @@ function App() {
           <TechStack />
           <Hero />
           <p className="text-center">
-            Hi there, don't be shy, take a look around. Maybe drop me a message in the contact form. <br />
+            Hi there, welcome to my portfolio site where I'll be telling you a bit more about myself, my projects,{' '}
+            <br />
+            and my journey as a Junior Developer so far! So don't be shy, take a look around. Maybe drop me a message in
+            the contact form. <br />
             Let me know where I can improve, what changes you'd make, what you like, what you don't like! <br />
             <br />
-            You can find all my important contact information in the Nav Bar. You can find a link to my{' '}
+            You can find all of my important contact information in the Nav Bar. You'll see the links to my{' '}
             <a className="animate-pulse font-bold" href="https://discord.gg/FXqKfPgnbp">
               Discord server
             </a>
@@ -35,7 +38,7 @@ function App() {
               LinkedIn
             </a>{' '}
             and plenty of links to send you <br />
-            back and forth between them in an infinite loop. Enjoy!
+            back and forth between them in an infinite loop. Just click on the icons and enjoy!
           </p>
           <div className="pb-12">
             <Duolingo />
