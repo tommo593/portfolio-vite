@@ -27,7 +27,7 @@ export const DESKTOP_IMAGES = [
     src: '/jsss.png',
     url: 'https://job-satisfaction-ts.vercel.app/',
     title: 'Job Satisfaction Survey',
-    text: 'A job satisfaction survey built in React, Next.js, Tailwind. Will be implementing PostgreSQL and chart.js (ongoing)',
+    text: 'A job satisfaction survey built in React, Next.js, Tailwind.',
   },
   {
     src: '/hss.png',
@@ -39,6 +39,6 @@ export const DESKTOP_IMAGES = [
     src: '/tass.png',
     url: 'https://github.com/tommo593/travel-app/tree/main',
     title: 'Travel app',
-    text: 'A travel app made to help people share their travel experiences and locations built in React, Next.js, Tailwind',
+    text: 'A travel app built in React, Next.js, Tailwind',
   },
 ];

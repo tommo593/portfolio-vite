@@ -33,7 +33,7 @@ export function MyWork() {
           </p>
         </div>
         <div className="flex flex-col">
-          <div className="mx-auto flex max-w-80 flex-row items-center justify-center overflow-hidden" ref={emblaRef}>
+          <div className="m-auto flex max-w-80 flex-row items-center justify-center overflow-hidden" ref={emblaRef}>
             <div className="flex flex-row gap-2">
               {DESKTOP_IMAGES.map((image, index) => (
                 <div className="flex-[0_0_100%]" key={index}>
@@ -43,15 +43,17 @@ export function MyWork() {
                       alt=""
                       height={400}
                       width={800}
-                      className="mb-4 justify-between rounded border border-border_gray"
+                      className="m-auto mb-4 justify-between rounded border border-border_gray"
                     />
                   </a>
-                  <p className="p-2 italic">{image.text}</p>
+                  {/* <div className="m-auto">
+                    <p className="m-auto max-w-40 items-center p-2 italic">{image.text}</p>
+              </div> */}
                 </div>
               ))}
             </div>
           </div>
-          <div className="m-auto flex flex-row gap-8 pb-12 pt-4">
+          <div className="m-auto flex flex-row gap-4 pb-12 pt-4">
             <button
               className="embla__prev btn items-center rounded border border-transparent py-2 text-center text-white_text shadow"
               onClick={scrollPrev}
