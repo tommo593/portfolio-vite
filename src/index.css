@@ -273,10 +273,14 @@ nav {
   transition: var(--transition);
   cursor: pointer;
 }
+
+/*
 .nav-toggle:hover {
   color: #000000;
   transform: rotate(90deg);
 }
+*/
+
 .logo {
   height: 80px;
 }

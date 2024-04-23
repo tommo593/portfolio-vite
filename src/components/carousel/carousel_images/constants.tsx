@@ -27,18 +27,18 @@ export const DESKTOP_IMAGES = [
     src: '/jsss.png',
     url: 'https://job-satisfaction-ts.vercel.app/',
     title: 'Job Satisfaction Survey',
-    text: 'An online estate agency built in React, Next.js, Tailwind',
+    text: 'A job satisfaction survey built in React, Next.js, Tailwind. Will be implementing PostgreSQL and chart.js (ongoing)',
   },
   {
     src: '/hss.png',
     url: 'https://github.com/tommo593/hagl-nextjs',
     title: 'hagl - An online estate agency',
-    text: 'An online estate agency built in React, Next.js, Tailwind',
+    text: 'An online estate agency built in React, Next.js, Tailwind (ongoing)',
   },
   {
     src: '/tass.png',
     url: 'https://github.com/tommo593/travel-app/tree/main',
     title: 'Travel app',
-    text: 'An online estate agency built in React, Next.js, Tailwind',
+    text: 'A travel app made to help people share their travel experiences and locations built in React, Next.js, Tailwind',
   },
 ];

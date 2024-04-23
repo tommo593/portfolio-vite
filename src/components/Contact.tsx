@@ -27,11 +27,11 @@ export const Contact = () => {
       </div>
       <div>
         <form ref={form} onSubmit={sendEmail} className="m-auto flex max-w-96 flex-col justify-between rounded">
-          <label>Name</label>
+          <label className="pb-2">Name</label>
           <input type="text" name="user_name" className="mb-4 h-8 rounded border border-border_gray" />
-          <label>Email</label>
+          <label className="pb-2">Email</label>
           <input type="email" name="user_email" className="mb-4 h-8 rounded border border-border_gray" />
-          <label>Message</label>
+          <label className="pb-2">Message</label>
           <textarea name="message" className="mb-4 h-32 resize-none rounded border border-border_gray pb-8" />
           <input
             type="submit"
