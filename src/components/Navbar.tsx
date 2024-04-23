@@ -31,6 +31,12 @@ const NavLinks = ({ showLinks }: { showLinks: boolean }) => {
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState<boolean>(false);
+  const [isRotated, setIsRotated] = useState<boolean>(false);
+
+  const toggleLinks = () => {
+    setShowLinks(!showLinks);
+    setIsRotated(!isRotated);
+  };
 
   return (
     <nav>
@@ -39,7 +45,8 @@ const Navbar = () => {
           <a href="/">
             <img src={cb_nav} className="logo" alt="logo" title="Coding Bruv" />
           </a>
-          <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
+          <button className={`nav-toggle ${isRotated ? 'rotated' : ''}`} onClick={toggleLinks}>
+            {' '}
             <FaBars />
           </button>
         </div>
