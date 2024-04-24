@@ -21,24 +21,24 @@ export const DESKTOP_IMAGES = [
     src: '/cbss.png',
     url: '',
     title: 'This sites code',
-    text: 'The code for this site built in React, Vite, Tailwind',
+    text: 'The code for this site. Built in React, Vite, Tailwind',
   },
   {
     src: '/jsss.png',
     url: 'https://job-satisfaction-ts.vercel.app/',
     title: 'Job Satisfaction Survey',
-    text: 'A job satisfaction survey built in React, Next.js, Tailwind.',
+    text: 'A job satisfaction survey. Built in React, Next.js, Tailwind.',
   },
   {
     src: '/hss.png',
     url: 'https://github.com/tommo593/hagl-nextjs',
     title: 'hagl - An online estate agency',
-    text: 'An online estate agency built in React, Next.js, Tailwind (ongoing)',
+    text: 'An online estate agency. Built in React, Next.js, Tailwind (ongoing)',
   },
   {
     src: '/tass.png',
     url: 'https://github.com/tommo593/travel-app/tree/main',
     title: 'Travel app',
-    text: 'A travel app built in React, Next.js, Tailwind',
+    text: 'A travel app. Built in React, Next.js, Tailwind',
   },
 ];

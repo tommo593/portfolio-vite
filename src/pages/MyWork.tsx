@@ -45,10 +45,10 @@ export function MyWork() {
                       width={800}
                       className="m-auto mb-4 justify-between rounded border border-border_gray"
                     />
+                    <div className="m-auto">
+                      <p className="m-auto max-w-40 items-center p-2 text-sm italic">{image.text}</p>
+                    </div>
                   </a>
-                  {/* <div className="m-auto">
-                    <p className="m-auto max-w-40 items-center p-2 italic">{image.text}</p>
-              </div> */}
                 </div>
               ))}
             </div>
