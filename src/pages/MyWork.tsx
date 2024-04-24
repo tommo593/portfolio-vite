@@ -46,7 +46,8 @@ export function MyWork() {
                       className="m-auto mb-4 justify-between rounded border border-border_gray"
                     />
                     <div className="m-auto">
-                      <p className="m-auto max-w-40 items-center p-2 text-sm italic">{image.text}</p>
+                      <p className="m-auto items-center text-center text-sm">{image.placeholder}</p>
+                      <p className="m-auto items-center  text-center text-xs italic">{image.description}</p>
                     </div>
                   </a>
                 </div>

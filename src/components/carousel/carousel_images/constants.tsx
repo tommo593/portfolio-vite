@@ -19,26 +19,30 @@ export const IMAGES = [
 export const DESKTOP_IMAGES = [
   {
     src: '/cbss.png',
-    url: '',
+    url: 'https://github.com/tommo593/portfolio-vite',
     title: 'This sites code',
-    text: 'The code for this site. Built in React, Vite, Tailwind',
+    placeholder: 'The code for this site',
+    description: 'Built in React, Vite, Tailwind',
   },
   {
     src: '/jsss.png',
     url: 'https://job-satisfaction-ts.vercel.app/',
     title: 'Job Satisfaction Survey',
-    text: 'A job satisfaction survey. Built in React, Next.js, Tailwind.',
+    placeholder: 'Job Satisfaction Survey',
+    description: 'Built in React, Vite, Tailwind (ongoing)',
   },
   {
     src: '/hss.png',
     url: 'https://github.com/tommo593/hagl-nextjs',
     title: 'hagl - An online estate agency',
-    text: 'An online estate agency. Built in React, Next.js, Tailwind (ongoing)',
+    placeholder: 'An online estate agency',
+    description: 'Built in React, Next.js, Tailwind (ongoing)',
   },
   {
     src: '/tass.png',
     url: 'https://github.com/tommo593/travel-app/tree/main',
     title: 'Travel app',
-    text: 'A travel app. Built in React, Next.js, Tailwind',
+    placeholder: 'Travel app',
+    description: 'Built in React, Next.js, Tailwind',
   },
 ];
