@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
         src="coding_bruv_full.png"
         alt="Coding Bruv"
         title="Coding Bruv"
-        className="m-auto hidden h-auto max-w-full pb-12 pt-8"
+        className="m-auto h-auto max-w-full pb-12 pt-8"
       />
     </div>
   );
