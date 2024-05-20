@@ -13,7 +13,7 @@ function App() {
         <div className="px-4">
           <TechStack />
           <Hero />
-          <p className="text-center">
+          <p className="text-center leading-relaxed">
             Hi there, welcome to my portfolio site where I'll be telling you a bit more about myself, my projects,{' '}
             <br />
             and my journey as a Junior Developer so far! So don't be shy, take a look around. Maybe drop me a message in
@@ -29,7 +29,11 @@ function App() {
             general chit-chat. <br />
             There's about 250 people in there, I'm sure you'll find someone! <br />
             <br />
-            You'll also find my most up-to-date CV up there, along with my{' '}
+            You'll also find my most up-to-date{' '}
+            <a className="animate-pulse font-bold" href="https://tan-eileen-42.tiiny.site">
+              CV
+            </a>{' '}
+            up there, along with my{' '}
             <a className="animate-pulse font-bold" href="https://github.com/tommo593">
               GitHub
             </a>
