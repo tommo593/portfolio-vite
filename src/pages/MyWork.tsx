@@ -24,7 +24,7 @@ export function MyWork() {
       <Navbar />
       <div className="px-4">
         <h3 className="py-12 text-center">My Projects</h3>
-        <div className="m-auto pb-8 text-center">
+        <div className="m-auto pb-8 text-center leading-relaxed">
           <p>
             On the carousel below you'll see all of my proudest projects so far.
             <br />
