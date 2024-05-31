@@ -6,11 +6,11 @@ const AboutMe = () => {
     <div>
       <Navbar />
       <h3 className="py-12 text-center">About Me</h3>
-      <div className="flex flex-row justify-center space-x-8 px-4 pb-12 text-sm">
+      <div className="flex flex-row justify-center space-x-8 px-4 pb-12 text-sm sm:flex-col">
         <div>
           <img
             src="hols.jpg"
-            alt="A photo of at my Brother-in-Laws wedding in Cyprus"
+            alt="A photo of me at my Brother-in-Laws wedding in Cyprus"
             className="m-auto max-h-80 overflow-hidden rounded"
           />
         </div>
