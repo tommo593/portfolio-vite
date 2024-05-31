@@ -7,6 +7,8 @@ const Footer = () => {
         <br />
         Adios!
       </p>
+      <br />
+      <p className="pb-7 text-center text-xs">Copyright Coding Bruv 2024 ©</p>
     </div>
   );
 };
