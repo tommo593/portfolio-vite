@@ -1,4 +1,3 @@
-import './App.css';
 import Navbar from './components/Navbar';
 import TechStack from './components/TechStack';
 import Duolingo from './components/Duolingo';

@@ -60,17 +60,17 @@ export const DESKTOP_IMAGES = [
     description: 'Built in HTML, CSS, JavaScript',
   },
   {
-    src: '/chrome_ext_screenshot.png',
-    url: 'https://github.com/tommo593/concert-chrome-ext/tree/main',
-    title: 'Local Concert Chrome Extension',
-    placeholder: 'Chrome Extension',
-    description: 'Built in HTML, CSS, JavaScript',
-  },
-  {
     src: '/poke_api_screenshot.png',
     url: 'https://github.com/tommo593/poke_api',
     title: 'Pokémon Shiny Tracker',
     placeholder: 'Pokémon Shiny Tracker',
     description: 'Built in Vite, PostgreSQL, GraphQL, Express',
+  },
+  {
+    src: '/han_rec_screenshot.png',
+    url: 'https://github.com/tommo593/han-rec',
+    title: 'Hire-a-noob showcase site',
+    placeholder: 'Hire-a-noob showcase site',
+    description: 'Built in Vite, Tailwind, Supabase',
   },
 ];

@@ -259,6 +259,7 @@ nav {
   top: 0;
   z-index: 99;
 }
+
 .nav-header {
   display: flex;
   align-items: center;
@@ -286,6 +287,7 @@ nav {
 .logo {
   height: 80px;
 }
+
 .links a {
   color: var(--grey-700);
   font-size: 1.25rem;
