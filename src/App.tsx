@@ -4,16 +4,12 @@ import TechStack from './components/TechStack';
 import Duolingo from './components/Duolingo';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
-import TestComponent from './components/TestComponent';
 
 function App() {
   return (
     <>
       <div>
         <Navbar />
-        <div>
-          <TestComponent />
-        </div>
         <div className="px-4">
           <TechStack />
           <Hero />
