@@ -12,6 +12,12 @@ export default {
       white_text: '#ffffff',
       border_gray: '#c5c7c9',
     },
+    screens: {
+      sm: '490px',
+      md: '768px',
+      lg: '1050px',
+      xl: '1440px',
+    },
     extend: {},
   },
   plugins: [],

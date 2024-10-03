@@ -59,4 +59,11 @@ export const DESKTOP_IMAGES = [
     placeholder: 'Chrome Extension',
     description: 'Built in HTML, CSS, JavaScript',
   },
+  {
+    src: '/chrome_ext_screenshot.png',
+    url: 'https://github.com/tommo593/concert-chrome-ext/tree/main',
+    title: 'Local Concert Chrome Extension',
+    placeholder: 'Chrome Extension',
+    description: 'Built in HTML, CSS, JavaScript',
+  },
 ];
