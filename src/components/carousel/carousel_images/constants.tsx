@@ -49,7 +49,14 @@ export const DESKTOP_IMAGES = [
     src: '/pern_screenshot.png',
     url: 'https://github.com/tommo593/pern-todo',
     title: 'PERN Todo List',
-    placeholder: 'PERN Todo List',
+    placeholder: 'PERN CRUD App',
     description: 'Built in React, Express, Node, PostgreSQL',
+  },
+  {
+    src: '/chrome_ext_screenshot.png',
+    url: 'https://github.com/tommo593/concert-chrome-ext/tree/main',
+    title: 'Local Concert Chrome Extension',
+    placeholder: 'Chrome Extension',
+    description: 'Built in HTML, CSS, JavaScript',
   },
 ];
