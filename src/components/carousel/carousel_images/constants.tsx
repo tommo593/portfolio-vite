@@ -45,4 +45,11 @@ export const DESKTOP_IMAGES = [
     placeholder: 'Travel app',
     description: 'Built in React, Next.js, Tailwind',
   },
+  {
+    src: '/pern_screenshot.png',
+    url: 'https://github.com/tommo593/pern-todo',
+    title: 'PERN Todo List',
+    placeholder: 'PERN Todo List',
+    description: 'Built in React, Express, Node, PostgreSQL',
+  },
 ];
