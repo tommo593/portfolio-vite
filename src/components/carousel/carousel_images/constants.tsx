@@ -66,4 +66,11 @@ export const DESKTOP_IMAGES = [
     placeholder: 'Chrome Extension',
     description: 'Built in HTML, CSS, JavaScript',
   },
+  {
+    src: '/poke_api_screenshot.png',
+    url: 'https://github.com/tommo593/poke_api',
+    title: 'Pokémon Shiny Tracker',
+    placeholder: 'Pokémon Shiny Tracker',
+    description: 'Built in Vite, PostgreSQL, GraphQL, Express',
+  },
 ];
