@@ -1,7 +1,7 @@
 const TestComponent = () => {
   return (
     <div>
-      <h3 className="text-blue-400 pt-4 text-center">Test Component</h3>
+      <h3 className="text-blue-400 border pt-4 text-center sm:bg-mask_green md:bg-baby_blue">Test Component</h3>
     </div>
   );
 };
