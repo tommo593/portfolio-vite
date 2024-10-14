@@ -13,7 +13,7 @@ const Duolingo: React.FC = () => {
 
   return (
     <div className="m-auto flex max-w-80 flex-row pt-20">
-      <p className="max-h-28 rounded-md border-transparent bg-gradient-to-b from-feather_green to-mask_green p-2 leading-normal text-white_text shadow-lg">
+      <p className="text-white_text max-h-28 rounded-md border-transparent bg-gradient-to-b from-feather-green to-mask-green leading-normal shadow-lg">
         In my spare time, I love to practice Spanish and currently have a {dailyCount} day streak on Duolingo!
       </p>
       <img src="./duo.svg" className="mt-8 max-h-20 object-bottom transition duration-500 hover:rotate-6" />

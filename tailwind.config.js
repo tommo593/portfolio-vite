@@ -14,7 +14,6 @@ export default {
         'border-gray': '#c5c7c9',
       },
       screens: {
-        xs: '360',
         sm: '490px',
         md: '768px',
         lg: '1050px',

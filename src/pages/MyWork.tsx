@@ -43,7 +43,7 @@ export function MyWork() {
                       alt=""
                       height={400}
                       width={800}
-                      className="m-auto mb-4 justify-between rounded border border-border_gray"
+                      className="border-border_gray m-auto mb-4 justify-between rounded border"
                     />
                     <div className="m-auto">
                       <p className="m-auto items-center text-center text-sm">{image.placeholder}</p>
@@ -56,13 +56,13 @@ export function MyWork() {
           </div>
           <div className="m-auto flex flex-row gap-4 pb-12 pt-4">
             <button
-              className="embla__prev btn items-center rounded border border-transparent py-2 text-center text-white_text shadow"
+              className="embla__prev btn text-white_text items-center rounded border border-transparent py-2 text-center shadow"
               onClick={scrollPrev}
             >
               Prev
             </button>
             <button
-              className="embla__next btn items-center rounded border border-transparent py-2 text-center text-white_text shadow"
+              className="embla__next btn text-white_text items-center rounded border border-transparent py-2 text-center shadow"
               onClick={scrollNext}
             >
               Next
