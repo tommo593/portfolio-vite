@@ -11,11 +11,15 @@ export function MyWork() {
       </div>
       <div>
         <p className="pb-8 text-center">Please see the links to my favourite/best projects below</p>
-        <div className="flex flex-auto pb-8">
-          <div className="flex flex-col justify-between text-center">
+        <div className="flex flex-auto justify-center pb-8">
+          <div className="flex flex-col items-center justify-center px-2 text-center">
             {DESKTOP_IMAGES.map((image, index) => (
-              <div className="flex justify-center" key={index}>
+              <div className="mb-8 mt-8 flex justify-center rounded border border-gray-200 p-4 shadow-lg" key={index}>
                 <a href={image.url} target="_blank" rel="noopener noreferrer" title={image.title}>
+                  <div className="m-auto pb-2">
+                    <p className="m-auto items-center text-center text-sm font-bold">{image.placeholder}</p>
+                    <p className="m-auto items-center text-center text-xs italic">{image.description}</p>
+                  </div>
                   <img
                     src={image.src}
                     alt=""
@@ -23,10 +27,6 @@ export function MyWork() {
                     width={600}
                     className="m-auto mb-4 justify-between rounded border border-border-gray"
                   />
-                  <div className="m-auto">
-                    <p className="m-auto items-center text-center text-sm">{image.placeholder}</p>
-                    <p className="m-auto items-center  text-center text-xs italic">{image.description}</p>
-                  </div>
                 </a>
               </div>
             ))}
