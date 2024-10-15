@@ -1,10 +1,46 @@
 import { DESKTOP_IMAGES } from '../components/carousel/carousel_images/constants';
-import { useCallback } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export function MyWork() {
+  return (
+    <div>
+      <Navbar />
+      <div className="px-4">
+        <h3 className="py-12 text-center">My Projects</h3>
+      </div>
+      <div>
+        <p className="pb-8 text-center">Please see the links to my favourite/best projects below</p>
+        <div className="flex flex-auto pb-8">
+          <div className="flex flex-col justify-between text-center">
+            {DESKTOP_IMAGES.map((image, index) => (
+              <div className="flex justify-center" key={index}>
+                <a href={image.url} target="_blank" rel="noopener noreferrer" title={image.title}>
+                  <img
+                    src={image.src}
+                    alt=""
+                    height={300}
+                    width={600}
+                    className="m-auto mb-4 justify-between rounded border border-border-gray"
+                  />
+                  <div className="m-auto">
+                    <p className="m-auto items-center text-center text-sm">{image.placeholder}</p>
+                    <p className="m-auto items-center  text-center text-xs italic">{image.description}</p>
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+}
+
+export default MyWork;
+
+/*
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     slidesToScroll: 1,
@@ -19,11 +55,6 @@ export function MyWork() {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
-  return (
-    <div>
-      <Navbar />
-      <div className="px-4">
-        <h3 className="py-12 text-center">My Projects</h3>
         <div className="m-auto pb-8 text-center leading-relaxed">
           <p>
             On the carousel below you'll see all of my proudest projects so far.
@@ -41,8 +72,8 @@ export function MyWork() {
                     <img
                       src={image.src}
                       alt=""
-                      height={400}
-                      width={800}
+                      height={300}
+                      width={600}
                       className="border-border_gray m-auto mb-4 justify-between rounded border"
                     />
                     <div className="m-auto">
@@ -69,10 +100,4 @@ export function MyWork() {
             </button>
           </div>
         </div>
-      </div>
-      <Footer />
-    </div>
-  );
-}
-
-export default MyWork;
+           */
