@@ -11,7 +11,7 @@ export function MyWork() {
       </div>
       <div>
         <p className="px-2 pb-8 text-center">
-          See the tiles below to view my work, click on the images to be taken to the live site or GitHub repo.
+          See the tiles below to view my work, click on the images to be taken to the live site or GitHub repo
         </p>
         <div className="flex flex-auto justify-center pb-8">
           <div className="flex flex-col items-center justify-center px-2 text-center">
