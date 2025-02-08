@@ -1,11 +1,9 @@
 import { FaGithub, FaDiscord, FaLinkedin, /* FaPhone, FaEnvelope, */ FaFile } from 'react-icons/fa';
-import home from '../../public/home.svg';
 
-export const links = [
+/* export const links = [
   {
     id: 1,
     url: '/',
-    img: home,
   },
   {
     id: 2,
@@ -22,7 +20,7 @@ export const links = [
     url: '/contact',
     text: 'contact',
   },
-];
+]; */
 
 export const social = [
   {

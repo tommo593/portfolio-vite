@@ -1,29 +1,19 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import AboutMe from './pages/AboutMe';
 import MyWork from './pages/MyWork';
+import AboutMe from './pages/AboutMe';
 import ContactMe from './pages/ContactMe';
+import Hero from './components/Hero';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-      <Router>
-        <div>
-          <Navbar />
-          <div>
-            <Route path="/"></Route>
-            <Route path="/about">
-              <AboutMe />
-            </Route>
-            <Route path="/projects">
-              <MyWork />
-            </Route>
-            <Route path="/contact">
-              <ContactMe />
-            </Route>
-          </div>
-        </div>
-      </Router>
+      <Navbar />
+      <Hero />
+      <AboutMe />
+      <MyWork />
+      <ContactMe />
+      <Footer />
     </>
   );
 }

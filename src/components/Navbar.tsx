@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { links, social } from '../assets/constants';
+import { social } from '../assets/constants';
 import handwritten_logo from '/handwritten_logo.svg';
 
 const SocialIcons = () => {
@@ -17,14 +18,19 @@ const SocialIcons = () => {
 
 const NavLinks = ({ showLinks }: { showLinks: boolean }) => {
   return (
-    <div className="links-container" style={{ height: showLinks ? 180 : 0 }}>
-      <ul className="links">
-        {links.map((link) => (
-          <li key={link.id}>
-            <a href={link.url}>{link.img}</a>
-          </li>
-        ))}
-      </ul>
+    <div className="links-container flex flex-row gap-2" style={{ height: showLinks ? 180 : 0 }}>
+      <Link to="/">
+        <img src="home.svg" alt="Home" className="max-h-6 hover:scale-125" />
+      </Link>
+      <Link to="/about">
+        <img src="about.svg" alt="About" className="max-h-6 hover:scale-125" />
+      </Link>
+      <Link to="/projects">
+        <img src="projects.svg" alt="Projects" className="max-h-6 hover:scale-125" />
+      </Link>
+      <Link to="/contact">
+        <img src="contact.svg" alt="Contact" className="max-h-6 hover:scale-125" />
+      </Link>
     </div>
   );
 };
@@ -46,7 +52,6 @@ const Navbar = () => {
             <img src={handwritten_logo} className="logo" alt="Tom O'Hanlon Logo" title="Tom O'Hanlon" />
           </a>
           <button className={`nav-toggle ${isRotated ? 'rotated' : ''}`} onClick={toggleLinks}>
-            {' '}
             <FaBars />
           </button>
         </div>

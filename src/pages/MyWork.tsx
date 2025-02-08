@@ -1,11 +1,8 @@
 import { DESKTOP_IMAGES } from '../components/carousel/carousel_images/constants';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 
 export function MyWork() {
   return (
     <div>
-      <Navbar />
       <div className="px-4">
         <h3 className="py-12 text-center">My Projects</h3>
       </div>
@@ -36,7 +33,6 @@ export function MyWork() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

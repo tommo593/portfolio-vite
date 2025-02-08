@@ -11,26 +11,21 @@ import ContactMe from './pages/ContactMe.tsx';
 import NotFound from './pages/NotFound.tsx';
 
 ReactGA.initialize('G-BB19JP0LHQ');
-
 ReactGA.send({ hitType: 'pageview', page: window.location.pathname });
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <NotFound />,
+    children: [
+      { path: 'about', element: <AboutMe /> },
+      { path: 'projects', element: <MyWork /> },
+      { path: 'contact', element: <ContactMe /> },
+    ],
   },
   {
-    path: '/about',
-    element: <AboutMe />,
-  },
-  {
-    path: '/projects',
-    element: <MyWork />,
-  },
-  {
-    path: '/contact',
-    element: <ContactMe />,
+    path: '*', // Handles 404 cases
+    element: <NotFound />,
   },
 ]);
 
