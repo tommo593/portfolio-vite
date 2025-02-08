@@ -9,7 +9,7 @@ export default {
         'feather-green': '#58cc02',
         'mask-green': '#89e219',
         'dark-navy': '#14213D',
-        mustard: '#FCA311',
+        'mustard-yellow': '#FCA311',
         'light-grey': '#E5E5E5',
         'off-black': '#121212',
         'off-white': '#F5F5F5',
