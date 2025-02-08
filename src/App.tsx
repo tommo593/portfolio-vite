@@ -10,8 +10,6 @@ function App() {
       <div>
         <Navbar />
         <div className="px-4">
-          <TechStack />
-          <Hero />
           <p className="text-center leading-relaxed">
             Hi there, welcome to my portfolio site where I'll be telling you a bit more about myself, my projects,{' '}
             <br />
