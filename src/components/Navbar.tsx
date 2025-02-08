@@ -21,7 +21,7 @@ const NavLinks = ({ showLinks }: { showLinks: boolean }) => {
       <ul className="links">
         {links.map((link) => (
           <li key={link.id}>
-            <a href={link.url}>{link.text}</a>
+            <a href={link.url}>{link.img}</a>
           </li>
         ))}
       </ul>

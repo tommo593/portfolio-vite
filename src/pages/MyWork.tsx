@@ -14,14 +14,14 @@ export function MyWork() {
           See the tiles below to view my work, click on the images to be taken to the live site or GitHub repo
         </p>
         <div className="flex flex-auto justify-center pb-8">
-          <div className="flex flex-col items-center justify-center px-2 text-center">
+          <div className="flex grid-cols-2 items-center justify-center px-2 text-center">
             {DESKTOP_IMAGES.map((image, index) => (
               <div className="mb-8 mt-8 flex justify-center rounded border border-gray-200 p-4 shadow-lg" key={index}>
                 <a href={image.url} target="_blank" rel="noopener noreferrer" title={image.title}>
                   <div className="m-auto pb-2">
-                    <p className="pb-1 font-bold">{image.title}</p>
-                    <p className="m-auto items-center pb-1 text-center text-sm">{image.placeholder}</p>
-                    <p className="m-auto items-center pb-1 text-center text-xs italic">{image.description}</p>
+                    <p className="pb-1 text-left font-bold">{image.title}</p>
+                    <p className="m-auto items-center pb-1 text-left text-sm">{image.placeholder}</p>
+                    <p className="m-auto items-center pb-1 text-left text-xs italic">{image.description}</p>
                   </div>
                   <img
                     src={image.src}

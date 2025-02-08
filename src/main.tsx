@@ -8,6 +8,7 @@ import './index.css';
 import AboutMe from './pages/AboutMe.tsx';
 import MyWork from './pages/MyWork.tsx';
 import ContactMe from './pages/ContactMe.tsx';
+import NotFound from './pages/NotFound.tsx';
 
 ReactGA.initialize('G-BB19JP0LHQ');
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <NotFound />,
   },
   {
     path: '/about',
