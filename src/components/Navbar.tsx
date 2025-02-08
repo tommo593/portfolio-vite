@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { links, social } from '../assets/constants';
-import cb_nav from '/cb_nav.png';
+import handwritten_logo from '/handwritten_logo.svg';
 
 const SocialIcons = () => {
   return (
@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <a href="/">
-            <img src={cb_nav} className="logo" alt="logo" title="Coding Bruv" />
+            <img src={handwritten_logo} className="logo" alt="Tom O'Hanlon Logo" title="Tom O'Hanlon" />
           </a>
           <button className={`nav-toggle ${isRotated ? 'rotated' : ''}`} onClick={toggleLinks}>
             {' '}
