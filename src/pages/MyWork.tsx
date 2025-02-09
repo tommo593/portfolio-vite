@@ -12,15 +12,12 @@ export function MyWork() {
         </p>
         <div className="grid grid-cols-1 gap-8 px-4 pb-8 md:grid-cols-2">
           {DESKTOP_IMAGES.map((image, index) => (
-            <div className="flex flex-col items-center p-4 shadow-lg hover:ease-in" key={index}>
+            <div
+              className="border-mustard-yellow flex flex-col items-center rounded border p-4 shadow-lg duration-300 hover:animate-pulse"
+              key={index}
+            >
               <a href={image.url} target="_blank" rel="noopener noreferrer" title={image.title}>
-                <img
-                  src={image.src}
-                  alt=""
-                  height={300}
-                  width={600}
-                  className="mb-4 rounded border border-border-gray"
-                />
+                <img src={image.src} alt="" height={300} width={600} className="mb-4 rounded" />
               </a>
               <div className="pb-2">
                 <p className="pb-1 text-left font-bold">{image.title}</p>

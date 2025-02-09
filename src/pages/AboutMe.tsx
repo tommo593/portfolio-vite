@@ -4,13 +4,6 @@ const AboutMe = () => {
       <h3 className="py-12 text-center">About Me</h3>
       <div className="flex justify-center space-x-8 px-4 pb-12 text-sm sm:flex-col sm:text-center md:flex-row">
         <div>
-          <img
-            src="hols.jpg"
-            alt="A photo of me at my Brother-in-Laws wedding in Cyprus"
-            className="m-auto max-h-80 overflow-hidden rounded sm:mb-8"
-          />
-        </div>
-        <div>
           <h4>What have I been doing lately?</h4>
           <br />
           <p className="text-left">
