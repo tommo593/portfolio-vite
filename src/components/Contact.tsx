@@ -1,23 +1,26 @@
-import React, { useRef } from 'react';
+import { useRef, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
-// import { contactInfo } from '../assets/constants';
 
 export const Contact = () => {
-  const form = useRef<HTMLFormElement>(null);
+  const form = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (form.current) {
-      emailjs.sendForm('service_3a1ykjf', 'template_4v0vmcq', form.current, 'JPMp-qtbiMvF7o0vG').then(
-        (response) => {
-          console.log('SUCCESS!', response.status, response.text);
+    if (!form.current) return;
+
+    emailjs
+      .sendForm('service_3a1ykjf', 'template_4v0vmcq', form.current, {
+        publicKey: 'JPMp-qtbiMvF7o0vG',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
         },
         (error) => {
-          console.log('FAILED...', error);
+          console.error('FAILED...', error.text);
         }
       );
-    }
   };
 
   return (
@@ -28,15 +31,15 @@ export const Contact = () => {
       <div>
         <form ref={form} onSubmit={sendEmail} className="m-auto flex max-w-96 flex-col justify-between rounded">
           <label className="pb-2">Name</label>
-          <input type="text" name="user_name" className="mb-4 h-8 rounded border border-border_gray" />
+          <input type="text" name="user_name" className="border-border_gray mb-4 h-8 rounded border" required />
           <label className="pb-2">Email</label>
-          <input type="email" name="user_email" className="mb-4 h-8 rounded border border-border_gray" />
+          <input type="email" name="user_email" className="border-border_gray mb-4 h-8 rounded border" required />
           <label className="pb-2">Message</label>
-          <textarea name="message" className="mb-4 h-32 resize-none rounded border border-border_gray pb-8" />
+          <textarea name="message" className="border-border_gray mb-4 h-32 resize-none rounded border pb-8" required />
           <input
             type="submit"
-            value="send"
-            className="btn items-center rounded border border-transparent py-2 text-center text-white_text shadow"
+            value="Send"
+            className="btn text-off-black bg-mustard-yellow items-center rounded border border-transparent py-2 text-center shadow"
           />
         </form>
       </div>
@@ -55,3 +58,16 @@ export default Contact;
           ))}
         </ul>
           </div> */
+
+/*  if (form.current) {
+      emailjs.sendForm('service_3a1ykjf', 'template_4v0vmcq', form.current, 'JPMp-qtbiMvF7o0vG').then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        }
+      );
+    }
+  };
+*/

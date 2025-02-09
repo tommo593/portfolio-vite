@@ -18,6 +18,7 @@ export const IMAGES = [
 
 export const DESKTOP_IMAGES = [
   {
+    id: '1.',
     src: '/cbss.png',
     url: 'https://github.com/tommo593/portfolio-vite',
     title: 'Coding Bruv',
@@ -25,6 +26,7 @@ export const DESKTOP_IMAGES = [
     description: 'Built in React, Vite, Tailwind',
   },
   {
+    id: '2.',
     src: '/jsss.png',
     url: 'https://job-satisfaction-ts.vercel.app/',
     title: 'Fulfilld',
@@ -32,6 +34,7 @@ export const DESKTOP_IMAGES = [
     description: 'Built in React, Vite, Tailwind (ongoing)',
   },
   {
+    id: '3.',
     src: '/hss.png',
     url: 'https://github.com/tommo593/hagl-nextjs',
     title: 'hagl',
@@ -39,6 +42,7 @@ export const DESKTOP_IMAGES = [
     description: 'Built in React, Next.js, Tailwind (ongoing)',
   },
   {
+    id: '4.',
     src: '/tass.png',
     url: 'https://github.com/tommo593/travel-app/tree/main',
     title: 'Travel app',
@@ -46,6 +50,7 @@ export const DESKTOP_IMAGES = [
     description: 'Built in React, Next.js, Tailwind',
   },
   {
+    id: '5.',
     src: '/pern_screenshot.png',
     url: 'https://github.com/tommo593/pern-todo',
     title: 'Todo List',
@@ -53,6 +58,7 @@ export const DESKTOP_IMAGES = [
     description: 'Built in React, Express, Node, PostgreSQL',
   },
   {
+    id: '6.',
     src: '/chrome_ext_screenshot.png',
     url: 'https://github.com/tommo593/concert-chrome-ext/tree/main',
     title: 'Local Concert Finder',
@@ -60,6 +66,7 @@ export const DESKTOP_IMAGES = [
     description: 'Built in HTML, CSS, JavaScript',
   },
   {
+    id: '7.',
     src: '/poke_api_screenshot.png',
     url: 'https://github.com/tommo593/poke_api',
     title: 'Pokémon Shiny Tracker',
@@ -67,6 +74,7 @@ export const DESKTOP_IMAGES = [
     description: 'Built in Vite, PostgreSQL, GraphQL, Express',
   },
   {
+    id: '8.',
     src: '/han_rec_screenshot.png',
     url: 'https://github.com/tommo593/han-rec',
     title: 'Find-a-Noob',
