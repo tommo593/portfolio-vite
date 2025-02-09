@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { social } from '../assets/constants';
-import handwritten_logo from '/handwritten_logo.svg';
+import tab_icon from '/tab_icon.svg';
 
 const SocialIcons = () => {
   return (
@@ -49,7 +49,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <a href="/">
-            <img src={handwritten_logo} className="logo" alt="Tom O'Hanlon Logo" title="Tom O'Hanlon" />
+            <img src={tab_icon} className="logo" alt="Tom O'Hanlon Logo" title="Tom O'Hanlon" />
           </a>
           <button className={`nav-toggle ${isRotated ? 'rotated' : ''}`} onClick={toggleLinks}>
             <FaBars />

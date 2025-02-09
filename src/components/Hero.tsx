@@ -1,6 +1,9 @@
 const Hero: React.FC = () => {
   return (
     <div>
+      <div>
+        <img src="handwritten_logo.svg" alt="Tom O'Hanlon Logo" className="m-auto max-h-28" />
+      </div>
       <div className="m-auto max-w-3xl text-left text-xs">
         I am a self-taught developer with over a years personal experience using React and other popular Front End
         frameworks. Naturally, I started off by using The Holy Trinity, HTML, CSS, JS and broadened my horizons.
