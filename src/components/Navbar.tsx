@@ -18,7 +18,7 @@ const SocialIcons = () => {
 
 const NavLinks = ({ showLinks }: { showLinks: boolean }) => {
   return (
-    <div className="links-container flex flex-row gap-2" style={{ height: showLinks ? 180 : 0 }}>
+    <div className="flex flex-row gap-2" style={{ height: showLinks ? 180 : 0 }}>
       <Link to="/">
         <img src="home.svg" alt="Home" className="max-h-6 hover:scale-125" />
       </Link>
