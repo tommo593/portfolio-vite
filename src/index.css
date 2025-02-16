@@ -265,7 +265,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.75rem;
   }
   .nav-header {
     padding: 0;
@@ -274,7 +274,7 @@ nav {
     display: none;
   }
   .links-container {
-    height: auto !important;
+    height: 3rem;
   }
   .links {
     display: flex;
