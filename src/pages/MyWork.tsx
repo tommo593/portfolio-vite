@@ -10,7 +10,7 @@ export function MyWork() {
         <p className="px-2 pb-8 text-center">
           See the tiles below to view my work, click on the images to be taken to the live site or GitHub repo
         </p>
-        <div className="grid grid-cols-1 gap-8 px-4 pb-8 md:grid-cols-2">
+        <div className="m-auto grid grid-cols-1 gap-8 px-4 pb-8 md:grid-cols-2">
           {DESKTOP_IMAGES.map((image, index) => (
             <div className=" flex flex-col p-4 duration-300 hover:animate-pulse" key={index}>
               <p className="mb-1 text-xs">{image.id}</p>
