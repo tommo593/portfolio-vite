@@ -10,14 +10,20 @@ export function MyWork() {
         <p className="px-2 pb-8 text-center">
           See the tiles below to view my work, click on the images to be taken to the live site or GitHub repo
         </p>
-        <div className="m-auto grid max-w-4xl grid-cols-1 gap-8 px-4 pb-8 md:grid-cols-2">
+        <div className="m-auto grid max-w-4xl grid-cols-1 gap-8 px-4 pb-8 text-off-white md:grid-cols-2">
           {DESKTOP_IMAGES.map((image, index) => (
-            <div className=" flex flex-col p-4 duration-300 hover:animate-pulse" key={index}>
+            <div className=" flex flex-col rounded p-4" key={index}>
               <p className="mb-1 text-xs">{image.id}</p>
               <a href={image.url} target="_blank" rel="noopener noreferrer" title={image.title}>
-                <img src={image.src} alt="" height={200} width={400} className="mb-4 rounded" />
+                <img
+                  src={image.src}
+                  alt={image.placeholder}
+                  height={200}
+                  width={400}
+                  className="mb-4 w-full items-center rounded drop-shadow-xl duration-300 hover:opacity-80"
+                />
               </a>
-              <div className="pb-2 text-left">
+              <div className="pb-2 text-left text-off-white">
                 <p className="pb-1 text-left font-bold">{image.title}</p>
                 <p className="text-left text-xs">{image.placeholder}</p>
               </div>
