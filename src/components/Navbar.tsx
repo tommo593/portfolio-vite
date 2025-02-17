@@ -66,9 +66,7 @@ const Navbar = () => {
             />
           </button>
         </div>
-        <div
-          className={`mx-4 flex flex-col items-end gap-2 pb-4 pt-4 md:flex-row ${isOpen ? 'block' : 'hidden md:flex'}`}
-        >
+        <div className={`mx-4 flex flex-col items-end gap-4 pt-4 md:hidden ${isOpen ? 'block' : 'hidden'}`}>
           <NavLinks />
         </div>
         <SocialIcons />
