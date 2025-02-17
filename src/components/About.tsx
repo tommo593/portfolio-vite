@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div>
       <h3 className="py-8 text-center">About</h3>
-      <div className="m-auto max-w-3xl text-left text-xs">
+      <div className="m-auto max-w-3xl p-4 text-left text-xs">
         I am a self-taught developer with over a years personal experience using React and other popular Front End
         frameworks. Naturally, I started off by using The Holy Trinity, HTML, CSS, JS and broadened my horizons.
         <br />

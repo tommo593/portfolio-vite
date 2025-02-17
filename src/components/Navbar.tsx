@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FaHamburger } from 'react-icons/fa';
 import { social } from '../assets/constants';
@@ -18,14 +18,43 @@ const SocialIcons = () => {
   );
 };
 
-const Navbar = () => {
-  const [showLinks, setShowLinks] = useState<boolean>(false);
-  const [isRotated, setIsRotated] = useState<boolean>(false);
+const NavLinks = () => {
+  return (
+    <>
+      <Link to="/">
+        {' '}
+        <img src="home.svg" alt="Home" className="max-h-6 hover:scale-125" />
+      </Link>
+      <Link to="/about">
+        {' '}
+        <img src="about.svg" alt="About" className="max-h-6 hover:scale-125" />
+      </Link>
+      <Link to="/projects">
+        {' '}
+        <img src="projects.svg" alt="Projects" className="max-h-6 hover:scale-125" />
+      </Link>
+      <Link to="/contact">
+        {' '}
+        <img src="contact.svg" alt="Contact" className="max-h-6 hover:scale-125" />
+      </Link>
+    </>
+  );
+};
 
-  const toggleLinks = () => {
-    setShowLinks(!showLinks);
-    setIsRotated(!isRotated);
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
   };
+
+  // const [showLinks, setShowLinks] = useState<boolean>(false);
+  // const [isRotated, setIsRotated] = useState<boolean>(false);
+
+  // const toggleLinks = () => {
+  //   setShowLinks(!showLinks);
+  //   setIsRotated(!isRotated);
+  // };
 
   return (
     <nav>
@@ -39,23 +68,14 @@ const Navbar = () => {
               title="Tom O'Hanlon"
             />
           </a>
-          <button className={`nav-toggle ${isRotated ? 'rotated' : ''} cursor-pointer md:hidden`} onClick={toggleLinks}>
-            <FaHamburger />
+          <button className="cursor-pointer md:hidden" onClick={toggleNavbar}>
+            <FaHamburger
+              className={`fill-mustard-yellow transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}
+            />
           </button>
         </div>
-        <div className="flex flex-row gap-2 pb-4 pt-4">
-          <Link to="/">
-            <img src="home.svg" alt="Home" className="max-h-6 hover:scale-125" />
-          </Link>
-          <NavLink to="/about">
-            <img src="about.svg" alt="About" className="max-h-6 hover:scale-125" />
-          </NavLink>
-          <NavLink to="/projects">
-            <img src="projects.svg" alt="Projects" className="max-h-6 hover:scale-125" />
-          </NavLink>
-          <NavLink to="/contact">
-            <img src="contact.svg" alt="Contact" className="max-h-6 hover:scale-125" />
-          </NavLink>
+        <div className={`flex flex-col gap-2 self-end pb-4 pt-4 md:flex-row ${isOpen ? 'block' : 'hidden md:flex'}`}>
+          <NavLinks />
         </div>
         <SocialIcons />
       </div>
