@@ -8,7 +8,7 @@ const Footer = () => {
         Adios!
       </p>
       <br />
-      <p className="pb-7 text-center text-xs">Copyright Coding Bruv 2024 ©</p>
+      <p className="pb-7 text-center text-xs">Copyright tohanlon 2025 ©</p>
     </div>
   );
 };

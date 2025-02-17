@@ -18,7 +18,7 @@ const SocialIcons = () => {
 
 const NavLinks = ({ showLinks }: { showLinks: boolean }) => {
   return (
-    <div className="flex flex-row gap-2" style={{ height: showLinks ? 180 : 0 }}>
+    <div className="flex flex-row gap-2 pb-4">
       <Link to="/">
         <img src="home.svg" alt="Home" className="max-h-6 hover:scale-125" />
       </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
           <a href="/">
             <img src={tab_icon} className="logo" alt="Tom O'Hanlon Logo" title="Tom O'Hanlon" />
           </a>
-          <button className={`nav-toggle ${isRotated ? 'rotated' : ''}`} onClick={toggleLinks}>
+          <button className={`nav-toggle ${isRotated ? 'rotated' : ''} md:hidden`} onClick={toggleLinks}>
             <FaBars />
           </button>
         </div>
