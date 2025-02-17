@@ -48,14 +48,6 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  // const [showLinks, setShowLinks] = useState<boolean>(false);
-  // const [isRotated, setIsRotated] = useState<boolean>(false);
-
-  // const toggleLinks = () => {
-  //   setShowLinks(!showLinks);
-  //   setIsRotated(!isRotated);
-  // };
-
   return (
     <nav>
       <div className="nav-center">
@@ -74,7 +66,9 @@ const Navbar = () => {
             />
           </button>
         </div>
-        <div className={`flex flex-col gap-2 self-end pb-4 pt-4 md:flex-row ${isOpen ? 'block' : 'hidden md:flex'}`}>
+        <div
+          className={`mx-4 flex flex-col items-end gap-2 pb-4 pt-4 md:flex-row ${isOpen ? 'block' : 'hidden md:flex'}`}
+        >
           <NavLinks />
         </div>
         <SocialIcons />
