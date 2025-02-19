@@ -1,8 +1,11 @@
 import { DESKTOP_IMAGES } from '../components/carousel/carousel_images/constants';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 export function MyWork() {
   return (
     <div>
+      <Navbar />
       <div className="px-4">
         <h3 className="py-12 text-center">My Projects</h3>
       </div>
@@ -23,14 +26,16 @@ export function MyWork() {
                   className="mb-4 w-full items-center rounded duration-300 hover:opacity-80"
                 />
               </a>
-              <div className="pb-2 text-left text-off-white">
-                <p className="pb-1 text-left font-bold">{image.title}</p>
-                <p className="text-left text-xs">{image.placeholder}</p>
+              <div className="pb-2 text-left">
+                <p className="pb-1 text-left text-lg font-bold text-mustard-yellow">{image.title}</p>
+                <p className="pb-1 text-left text-xs text-light-grey">{image.placeholder}</p>
+                <p className="text-left text-xs italic">{image.description}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

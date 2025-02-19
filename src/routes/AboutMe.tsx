@@ -1,6 +1,10 @@
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+
 const AboutMe = () => {
   return (
     <div>
+      <Navbar />
       <h3 className="py-12 text-center">About Me</h3>
       <div className="flex justify-center space-x-8 px-4 pb-12 text-sm sm:flex-col sm:text-center md:flex-row">
         <div>
@@ -28,6 +32,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

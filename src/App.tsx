@@ -1,7 +1,4 @@
 import Navbar from './components/Navbar';
-import MyWork from './pages/MyWork';
-import AboutMe from './pages/AboutMe';
-import ContactMe from './pages/ContactMe';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 
@@ -10,9 +7,6 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <AboutMe />
-      <MyWork />
-      <ContactMe />
       <Footer />
     </>
   );
