@@ -34,7 +34,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <div className="mb-12">
+      <div className="mb-12 p-2">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
