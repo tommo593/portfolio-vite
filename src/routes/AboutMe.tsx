@@ -1,5 +1,6 @@
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import Ball from '../components/ui/Ball';
 
 const AboutMe = () => {
   return (
@@ -31,6 +32,9 @@ const AboutMe = () => {
             C++, Phaser.js.
           </p>
         </div>
+      </div>
+      <div className="mx-8">
+        <Ball />
       </div>
       <Footer />
     </div>
