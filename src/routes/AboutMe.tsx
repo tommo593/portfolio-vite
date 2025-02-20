@@ -1,6 +1,7 @@
+import Duolingo from '../components/Duolingo';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import Ball from '../components/ui/Ball';
+import * as motion from 'motion/react-client';
 
 const AboutMe = () => {
   return (
@@ -33,8 +34,18 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <div className="mx-8">
-        <Ball />
+      <div className="mb-12">
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            scale: { type: 'spring', visualDuration: 0.8, bounce: 0.5 },
+          }}
+        >
+          {' '}
+          <Duolingo />
+        </motion.div>
       </div>
       <Footer />
     </div>
