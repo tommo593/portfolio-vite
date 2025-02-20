@@ -59,3 +59,5 @@ const BounceCard = ({ className, children }) => {
     </motion.div>
   );
 };
+
+export default BouncyCard;
