@@ -4,7 +4,11 @@ const Hero: React.FC = () => {
   return (
     <div>
       <div>
-        <img src="handwritten_logo.svg" alt="Tom O'Hanlon Logo" className="m-auto mb-16 mt-8 max-h-28" />
+        <img
+          src="handwritten_logo.svg"
+          alt="Tom O'Hanlon Logo"
+          className="m-auto mb-16 mt-8 max-h-28 border border-red-700"
+        />
       </div>
       <div>
         <LogoOrigami />
