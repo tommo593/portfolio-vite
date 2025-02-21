@@ -1,28 +1,34 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { SiAmazon, SiGithub, SiGoogle, SiMeta, SiTwitch } from 'react-icons/si';
+import { SiReact, SiVite, SiTypescript, SiTailwindcss, SiNodedotjs, SiGit, SiJira } from 'react-icons/si';
 import { twMerge } from 'tailwind-merge';
 
 // Component: Main DivOrigami Section
 export const DivOrigami: React.FC = () => {
   return (
-    <section className="flex h-72 flex-col items-center justify-center gap-12 bg-neutral-950 px-4 py-24 md:flex-row">
+    <section className="flex h-40 flex-col items-center justify-center gap-12 px-4 py-24 md:flex-row">
       <LogoRolodex
         items={[
-          <LogoItem key={1} className="bg-orange-300 text-neutral-900">
-            <SiAmazon />
+          <LogoItem key={1} className="bg-blue-200 text-neutral-900">
+            <SiReact />
           </LogoItem>,
-          <LogoItem key={2} className="bg-green-300 text-neutral-900">
-            <SiGoogle />
+          <LogoItem key={2} className="bg-yellow-300 text-neutral-900">
+            <SiVite />
           </LogoItem>,
-          <LogoItem key={3} className="bg-blue-300 text-neutral-900">
-            <SiMeta />
+          <LogoItem key={3} className="bg-blue-500 text-neutral-900">
+            <SiTypescript />
           </LogoItem>,
-          <LogoItem key={4} className="bg-white text-black">
-            <SiGithub />
+          <LogoItem key={4} className="bg-blue-300 text-neutral-900">
+            <SiTailwindcss />
           </LogoItem>,
-          <LogoItem key={5} className="bg-purple-300 text-neutral-900">
-            <SiTwitch />
+          <LogoItem key={5} className="bg-green-600 text-neutral-900">
+            <SiNodedotjs />
+          </LogoItem>,
+          <LogoItem key={6} className="bg-orange-600 text-neutral-900">
+            <SiGit />
+          </LogoItem>,
+          <LogoItem key={7} className="bg-blue-800 text-neutral-900">
+            <SiJira />
           </LogoItem>,
         ]}
       />
@@ -135,3 +141,5 @@ const LogoItem: React.FC<LogoItemProps> = ({ children, className }) => {
     </div>
   );
 };
+
+export default DivOrigami;

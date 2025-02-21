@@ -8,9 +8,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <div className="my-8">
-        <TechStack />
-      </div>
+      <div className="my-8"></div>
       <Footer />
     </>
   );
