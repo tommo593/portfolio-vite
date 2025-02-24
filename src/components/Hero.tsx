@@ -1,20 +1,19 @@
 import LogoOrigami from './ui/LogoOrigami';
-import * as motion from 'motion/react-client';
+//import * as motion from 'motion/react-client';
 
 const Hero: React.FC = () => {
   return (
     <div>
       <div>
-        <motion.div
+        {/*<motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             duration: 0.8,
             scale: { type: 'spring', visualDuration: 0.8, bounce: 0.5 },
           }}
-        >
-          <img src="handwritten_logo.svg" alt="Tom O'Hanlon Logo" className="m-auto mb-16 mt-8 max-h-28" />
-        </motion.div>
+        > </motion.div>*/}
+        <img src="handwritten_logo.svg" alt="Tom O'Hanlon Logo" className="m-auto mb-16 mt-8 max-h-28" />
       </div>
       <div className="m-auto mb-12 max-w-3xl p-2 text-left text-xs">
         I am a self-taught developer with over a years personal experience using React and other popular Front End
