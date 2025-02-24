@@ -1,26 +1,14 @@
-import LogoOrigami from './ui/LogoOrigami';
+//import LogoOrigami from './ui/LogoOrigami';
 
 const Hero: React.FC = () => {
   return (
     <div>
       <div>
-        <img
-          src="handwritten_logo.svg"
-          alt="Tom O'Hanlon Logo"
-          className="m-auto mb-16 mt-8 max-h-28 border border-red-700"
-        />
+        <img src="handwritten_logo.svg" alt="Tom O'Hanlon Logo" className="m-auto mb-16 mt-8 max-h-28" />
       </div>
-      <div>
+      {/*<div>
         <LogoOrigami />
-      </div>
-    </div>
-  );
-};
-
-export default Hero;
-
-{
-  /*
+      </div>*/}
       <div className="m-auto max-w-3xl p-2 text-left text-xs">
         I am a self-taught developer with over a years personal experience using React and other popular Front End
         frameworks. Naturally, I started off by using The Holy Trinity, HTML, CSS, JS and broadened my horizons.
@@ -42,5 +30,8 @@ export default Hero;
         This community has grown to over 250 members since and is growing all the time. You can also be a member by
         clicking the Discord icon in the nav bar!
       </div>
-      */
-}
+    </div>
+  );
+};
+
+export default Hero;
