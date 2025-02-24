@@ -12,7 +12,7 @@ const Duolingo: React.FC = () => {
   }, []);
 
   return (
-    <div className="m-auto flex max-w-80 flex-row pt-20">
+    <div className="m-auto flex max-w-80 flex-row pt-12">
       <p className="max-h-28 rounded-md border-transparent bg-gradient-to-b from-feather-green to-mask-green p-2 tracking-tight">
         In my spare time, I love to practice Spanish and currently have a {dailyCount} day streak on Duolingo!
       </p>
