@@ -1,7 +1,6 @@
 import Duolingo from '../components/Duolingo';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
-import * as motion from 'motion/react-client';
 
 const AboutMe = () => {
   return (
@@ -35,17 +34,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="mb-12 p-2">
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.8,
-            scale: { type: 'spring', visualDuration: 0.8, bounce: 0.5 },
-          }}
-        >
-          {' '}
-          <Duolingo />
-        </motion.div>
+        <Duolingo />
       </div>
       <Footer />
     </div>
