@@ -11,7 +11,7 @@ const AboutMe = () => {
         <div>
           <h4>What have I been doing lately?</h4>
           <br />
-          <p className="text-left text-xs">
+          <p className="mt-8 text-left text-xs">
             I'd been thinking about giving coding a little try for a long time but I'd also always wanted to hit
             personal goals too.
             <br />
