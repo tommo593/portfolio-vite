@@ -32,7 +32,11 @@ export const Contact = () => {
         <h3 className="py-8 text-center">Contact</h3>
       </div>
       <div>
-        <form ref={form} onSubmit={sendEmail} className="m-auto flex max-w-96 flex-col justify-between rounded">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="m-auto flex max-w-96 flex-col justify-between rounded text-off-black"
+        >
           <input type="text" name="user_name" className="mb-4 h-8 rounded border p-1" placeholder="name" required />
           <input type="email" name="user_email" className="mb-4 h-8 rounded border p-1" placeholder="email" required />
           <textarea
