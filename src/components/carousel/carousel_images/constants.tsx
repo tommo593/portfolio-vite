@@ -19,7 +19,7 @@ export const IMAGES = [
 export const DESKTOP_IMAGES = [
   {
     id: '1.',
-    src: '/cbss.png',
+    src: '/toh_ss.png',
     url: 'https://github.com/tommo593/portfolio-vite',
     title: 't.ohanlon',
     placeholder: 'The code for this site',

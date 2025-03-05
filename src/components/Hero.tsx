@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
         This community has grown to over 250 members since and is growing all the time. You can also be a member by
         clicking the Discord icon in the nav bar!
       </div>
-      <div className="mb-12">
+      <div className="m-auto mb-12">
         <LogoOrigami />
       </div>
     </div>
