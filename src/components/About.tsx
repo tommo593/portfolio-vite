@@ -4,7 +4,8 @@ export default function About() {
       <h3 className="py-8 text-center">About</h3>
       <div className="m-auto max-w-3xl p-4 text-left text-xs">
         I am a self-taught developer with over a years personal experience using React and other popular Front End
-        frameworks. Naturally, I started off by using The Holy Trinity, HTML, CSS, JS and broadened my horizons.
+        frameworks. Naturally, I started off by using The Holy Trinity, HTML, CSS, JS and broadened my horizons to more
+        "complex" languages/frameworks.
         <br />
         <br />
         Initially I taught myself by completing courses on Codecademy and then building personal projects, YouTube etc.
