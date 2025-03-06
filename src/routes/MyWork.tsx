@@ -7,7 +7,7 @@ export function MyWork() {
     <div>
       <Navbar />
       <div className="px-4">
-        <h3 className="py-12 text-center">My Projects</h3>
+        <h3 className="py-8 text-center">My Projects</h3>
       </div>
       <div>
         <p className="px-2 pb-8 text-center">
