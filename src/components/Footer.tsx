@@ -8,7 +8,7 @@ const Footer = () => {
         Adios!
       </p>
       <br />
-      <p className="mb-4 text-center text-xs">Copyright tohanlon 2025 &copy;</p>
+      <p className="mb-4 text-center text-xs">Copyright tohanlon {new Date().getFullYear()} &copy;</p>
     </div>
   );
 };
