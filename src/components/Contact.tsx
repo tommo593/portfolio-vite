@@ -37,20 +37,51 @@ export const Contact = () => {
           onSubmit={sendEmail}
           className="m-auto flex max-w-96 flex-col justify-between rounded text-off-black"
         >
-          <input type="text" name="user_name" className="mb-4 h-8 rounded border p-1" placeholder="name" required />
-          <input type="email" name="user_email" className="mb-4 h-8 rounded border p-1" placeholder="email" required />
-          <textarea
-            name="message"
-            className="mb-4 h-32 resize-none rounded border p-1 pb-8"
-            placeholder="message"
+          <label htmlFor="user_name" className="mb-1 font-medium">
+            Name
+          </label>
+          <input
+            type="text"
+            id="user_name"
+            name="user_name"
+            className="mb-4 h-10 rounded border p-2 focus:outline-none focus:ring-2 focus:ring-mustard-yellow"
+            placeholder="Enter your name"
             required
+            aria-required="true"
           />
+
+          <label htmlFor="user_email" className="mb-1 font-medium">
+            Email
+          </label>
+          <input
+            type="email"
+            id="user_email"
+            name="user_email"
+            className="mb-4 h-10 rounded border p-2 focus:outline-none focus:ring-2 focus:ring-mustard-yellow"
+            placeholder="Enter your email"
+            required
+            aria-required="true"
+          />
+
+          <label htmlFor="message" className="mb-1 font-medium">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            className="mb-4 h-32 resize-none rounded border p-2 focus:outline-none focus:ring-2 focus:ring-mustard-yellow"
+            placeholder="Type your message here..."
+            required
+            aria-required="true"
+          ></textarea>
+
           <input
             type="submit"
             value="Send"
-            className="cursor-pointer rounded border border-transparent bg-mustard-yellow py-2 text-center text-off-black hover:opacity-80 active:bg-light-grey"
+            className="cursor-pointer rounded border border-transparent bg-mustard-yellow py-2 text-center text-off-black hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-mustard-yellow active:bg-light-grey"
           />
         </form>
+
         {message && <p className="mt-4 text-center text-sm">{message}</p>}
       </div>
     </div>
