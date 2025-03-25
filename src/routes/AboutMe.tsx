@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <div>
       <Navbar />
-      <h3 className="mb-6 mt-8 text-center">About Me</h3>
+      <h2 className="mb-6 mt-8 text-center">About Me</h2>
       <div className="flex justify-center space-x-8 px-4 pb-12 text-sm sm:flex-col sm:text-center md:flex-row">
         <div>
           <p className="mt-8 max-w-2xl text-left text-xs">
@@ -30,7 +30,7 @@ const AboutMe = () => {
           className="rounded transition duration-300 hover:scale-105"
         />
         <img src="hols.jpg" alt="Me on holiday in Cyprus" className="rounded duration-300 hover:scale-105" />
-        <img src="dinner.jpg" alt="Me ond a dinner date" className="rounded duration-300 hover:scale-105" />
+        <img src="dinner.jpg" alt="Me on a dinner date" className="rounded duration-300 hover:scale-105" />
       </div>
       <div className="mb-12 p-2">
         <Duolingo />

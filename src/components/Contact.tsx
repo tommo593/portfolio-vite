@@ -29,7 +29,7 @@ export const Contact = () => {
   return (
     <div>
       <div>
-        <h3 className="py-8 text-center">Contact</h3>
+        <h2 className="py-8 text-center">Contact</h2>
       </div>
       <div>
         <form

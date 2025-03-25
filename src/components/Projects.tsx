@@ -3,7 +3,7 @@ import EmblaCarousel from './carousel/EmblaCarousel';
 const Projects = () => {
   return (
     <div className="py-8">
-      <h3 className="py-12 text-center">Projects</h3>
+      <h2 className="py-12 text-center">Projects</h2>
       <div>
         <EmblaCarousel />
       </div>
