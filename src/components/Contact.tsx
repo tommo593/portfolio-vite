@@ -37,7 +37,7 @@ export const Contact = () => {
           onSubmit={sendEmail}
           className="m-auto flex max-w-96 flex-col justify-between rounded text-off-black"
         >
-          <label htmlFor="user_name" className="mb-1 font-medium">
+          <label htmlFor="user_name" className="font-small mb-1 text-off-white">
             Name
           </label>
           <input
@@ -50,7 +50,7 @@ export const Contact = () => {
             aria-required="true"
           />
 
-          <label htmlFor="user_email" className="mb-1 font-medium">
+          <label htmlFor="user_email" className="font-small mb-1 text-off-white">
             Email
           </label>
           <input
@@ -63,7 +63,7 @@ export const Contact = () => {
             aria-required="true"
           />
 
-          <label htmlFor="message" className="mb-1 font-medium">
+          <label htmlFor="message" className="font-small mb-1 text-off-white">
             Message
           </label>
           <textarea
