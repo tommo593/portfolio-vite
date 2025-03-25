@@ -60,7 +60,7 @@ const Navbar = () => {
               title="Tom O'Hanlon"
             />
           </a>
-          <button className="cursor-pointer md:hidden" onClick={toggleNavbar}>
+          <button type="button" className="cursor-pointer md:hidden" onClick={toggleNavbar}>
             <FaHamburger
               className={`fill-mustard-yellow transition-transform duration-300 ${isOpen ? 'rotate-90' : ''}`}
             />
